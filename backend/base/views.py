@@ -11,4 +11,7 @@ def get_user_profile_data(request, pk):
         user = Users.objects.get(username=pk)
     except Users.DoesNotExist:
         return Response({'error': 'User not found'}, status=404)
+    
+    serializer = UserProfileSerializer(user, many=False)
+    return Response(serializer.data)
 
