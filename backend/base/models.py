@@ -7,3 +7,7 @@ class MyUser(AbstractUser):
     bio = models.Charfield(max_length=500)
     profile_image = models.ImageField(upload_to='profile_image/', blank=True, null=True)
     followers = models.ManyToManyField('self', symmetrical=False, related_name='following', blank=True)
+
+    def __str__(self):
+        return self.username
+
