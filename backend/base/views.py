@@ -14,6 +14,6 @@ def get_user_profile_data(request, pk):
             return Response({'error': 'User not found'}, status=404)
         
         serializer = UserProfileSerializer(user, many=False)
-        return Response(serializer.data) 
+        return Response(serializer.data)
     except:
         return Response({'error': 'An error getting user data'})
