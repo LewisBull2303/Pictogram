@@ -8,10 +8,12 @@ from .serializers import UserProfileSerializer
 @api_view(['GET'])
 def get_user_profile_data(request, pk):
     try:
-        user = Users.objects.get(username=pk)
-    except Users.DoesNotExist:
-        return Response({'error': 'User not found'}, status=404)
-    
-    serializer = UserProfileSerializer(user, many=False)
-    return Response(serializer.data)
-
+        try:
+            user = Users.objects.get(username=pk)
+        except Users.DoesNotExist:
+            return Response({'error': 'User not found'}, status=404)
+        
+        serializer = UserProfileSerializer(user, many=False)
+        return Response(serializer.data)
+    except:
+        return Response({'error': 'An error getting user data'})
