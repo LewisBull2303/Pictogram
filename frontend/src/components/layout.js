@@ -1,6 +1,10 @@
+import { Flex } from '@chakra-ui/react'
+
 const Layout = ({children}) => {
     return (
-        children
+        <Flex w='100vw' minH='100vh' bg='red.400'>
+            {children}
+        </Flex>
     )
 }
 
