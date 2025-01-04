@@ -4,12 +4,14 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ChakraProvider } from '@chakra-ui/react'
 
+import UserProfile  from './routes/userprofile';  
+
 function App() {
   return (
     <ChakraProvider>
       <Router>
         <Routes>
-          
+          <Route element={<UserProfile/>} paht='/:username' />
         </Routes>
       </Router>
     </ChakraProvider>
