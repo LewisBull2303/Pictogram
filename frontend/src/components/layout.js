@@ -1,10 +1,12 @@
-import { Flex } from '@chakra-ui/react'
+import { Box, VStack } from '@chakra-ui/react'
 
 const Layout = ({children}) => {
     return (
-        <Flex w='100vw' minH='100vh' bg='red.400'>
-            {children}
-        </Flex>
+        <VStack w='100vw' minH='100vh' bg='#FCFCFC'>
+            <Box w='100vw'>
+                {children}
+            </Box>
+        </VStack>
     )
 }
 
