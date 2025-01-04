@@ -11,7 +11,7 @@ function App() {
     <ChakraProvider>
       <Router>
         <Routes>
-          <Route element={<UserProfile/>} paht='/:username' />
+          <Route element={<UserProfile/>} path='/:username' />
         </Routes>
       </Router>
     </ChakraProvider>
