@@ -1,5 +1,6 @@
 import { Text, VStack, Flex, Box, Heading, HStack, Image, Button} from '@chakra-ui/react'
 import { useEffect, useState } from 'react';
+import { get_user_profile_data } from '../api/endpoints';
 
 const UserProfile = () => {
 
@@ -26,6 +27,17 @@ const UserProfile = () => {
 }
 
 const UserDetails = ({username}) => {
+
+    useEffect(() => {
+
+        const fecthData = async () => {
+            const data = await get_user_profile_data(username);
+            console.log(data)
+        }
+        fecthData()
+
+    }, [])
+
     return (
         <VStack w='100%' alignItems='start' gap='40px'>
             <Heading>@{username}</Heading>
