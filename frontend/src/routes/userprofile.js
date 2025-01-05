@@ -1,4 +1,4 @@
-import { Text, VStack, Flex, Box, Heading, HStack} from '@chakra-ui/react'
+import { Text, VStack, Flex, Box, Heading, HStack, Image} from '@chakra-ui/react'
 
 const UserProfile = () => {
     return (
@@ -17,10 +17,22 @@ const UserDetails = () => {
         <VStack w='100%' alignItems='start'>
             <Heading>@admin33</Heading>
             <HStack>
-                <Box>
+                <Box boxSize='150px' border='2px solid' borderColor='grey.700' bg='white' borderRadius='full' overflow='hidden'> 
+                <Image src='https://8000-lewisbull2303-instagram-spjqg3hzjk.app.codeanywhere.com/api//media/profile_image/360_F_7324855_mx4CEBWTr81XLOrlQccCROtP2uNR7xbk.jpg' boxSize='100%' objectFit='cover'/>
 
                 </Box>
-                <HStack></HStack>
+                <VStack>
+                    <HStack>
+                        <VStack>
+                            <Text>Followers</Text>
+                            <Text>0</Text>
+                        </VStack>
+                        <VStack>
+                            <Text>Following</Text>
+                            <Text>0</Text>
+                        </VStack>
+                    </HStack>
+                </VStack>
             </HStack>
 
         </VStack>
