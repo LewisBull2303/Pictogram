@@ -1,6 +1,9 @@
 import { Flex, HStack, Text} from "@chakra-ui/react";
 import { useNavigate } from 'react-router-dom'
 
+import { CgProfile } from "react-icons/cg";
+<CgProfile />
+
 const NavBar = () => {
 
     const nav = useNavigate();
@@ -14,7 +17,7 @@ const NavBar = () => {
             <HStack w='90%' justifyContent='space-between' color='white'>
                 <Text fontSize='24px' fontWeight='bold'>Clonestagram</Text>
                 <HStack>
-                    <Text onClick={(route) => handleNavigation('/')}>Profile</Text>
+                    <Text onClick={(route) => handleNavigation('')}><CgProfile size='22px'/></Text>
                 </HStack>
             </HStack>
         </Flex>
