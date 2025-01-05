@@ -2,7 +2,6 @@ import { Flex, HStack, Text} from "@chakra-ui/react";
 import { useNavigate } from 'react-router-dom'
 
 import { CgProfile } from "react-icons/cg";
-<CgProfile />
 
 const NavBar = () => {
 
