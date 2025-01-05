@@ -1,6 +1,7 @@
 import axios from 'axios'
+import SERVER_URL from '../constants/constants'
 
-const BASE_URL = 'https://8000-lewisbull2303-instagram-spjqg3hzjk.app.codeanywhere.com/api/'
+const BASE_URL = SERVER_URL
 
 const api =axios.create ({
     baseURL:BASE_URL,
