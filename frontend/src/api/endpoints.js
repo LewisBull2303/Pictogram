@@ -9,6 +9,6 @@ const api =axios.create ({
 })
 
 export const get_user_profile_data = async (username) => {
-    const response = await api.get(`user_data/${username}/`);
+    const response = await api.get(`/user_data/${username}/`);
     return response.data;
 }
