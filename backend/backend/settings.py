@@ -60,10 +60,11 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "https://localhost:3000",
-    "https://3000-lewisbull2303-instagram-spjqg3hzjk.app.codeanywhere.com"
+    "https://3000-lewisbull2303-instagram-spjqg3hzjk.app.codeanywhere.com",
+    "https://8000-lewisbull2303-instagram-spjqg3hzjk.app.codeanywhere.com",
 ]
 
-CORS_ALLOWED_CREDENTIALS = True
+CORS_ALLOW_CREDENTIALS = True
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

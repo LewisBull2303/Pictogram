@@ -1,7 +1,7 @@
 import { Text, VStack, Flex, Box, Heading, HStack, Image, Button} from '@chakra-ui/react'
 import { useEffect, useState } from 'react';
 import { get_user_profile_data } from '../api/endpoints';
-import SERVER_URL from '../constants/constants'
+import { SERVER_URL } from '../constants/constants';
 
 const UserProfile = () => {
 
@@ -31,30 +31,28 @@ const UserDetails = ({username}) => {
 
     const [loading, setLoading] = useState(true)
     const [bio, setBio] = useState('')
-    const [profile_image, setProfileImage] = useState('')
+    const [profileImage, setProfileImage] = useState('')
     const [followerCount, setFollowerCount] = useState(0)
     const [followingCount, setFollowingCount] = useState(0)
  
     useEffect(() => {
 
-        const fecthData = async () => {
-            try{
+        const fetchData = async () => {
+            try {
                 const data = await get_user_profile_data(username);
                 setBio(data.bio)
                 setProfileImage(data.profile_image)
                 setFollowerCount(data.follower_count)
                 setFollowingCount(data.following_count)
-                console.log(SERVER_URL, data.profile_image)
-            }
-            catch{
+                console.log(data.profileImage)
+            } catch {
                 console.log('error')
-            }
-            finally{
+            } finally {
                 setLoading(false)
             }
         }
-        fecthData()
-
+        fetchData()
+        
     }, [])
 
     return (
@@ -62,7 +60,7 @@ const UserDetails = ({username}) => {
             <Heading>@{username}</Heading>
             <HStack gap='20px'>
                 <Box boxSize='150px' border='2px solid' borderColor='grey.700' bg='white' borderRadius='full' overflow='hidden'> 
-                <Image src={`${SERVER_URL}${profile_image}`}boxSize='100%' objectFit='cover'/>
+                <Image src={`${SERVER_URL}${profileImage}`}boxSize='100%' objectFit='cover'/>
 
                 </Box>
                 <VStack gap='20px'>
@@ -83,5 +81,5 @@ const UserDetails = ({username}) => {
         </VStack>
     )
 }
-
+console.log(SERVER_URL)
 export default UserProfile
