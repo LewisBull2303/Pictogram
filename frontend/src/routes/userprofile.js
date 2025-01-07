@@ -60,24 +60,24 @@ const UserDetails = ({username}) => {
             <Heading>@{username}</Heading>
             <HStack gap='20px'>
                 <Box boxSize='150px' border='2px solid' borderColor='grey.700' bg='white' borderRadius='full' overflow='hidden'> 
-                <Image src={`${SERVER_URL}${profileImage}`}boxSize='100%' objectFit='cover'/>
+                <Image src={loading ? '' : `${SERVER_URL}${profileImage}`}boxSize='100%' objectFit='cover'/>
 
                 </Box>
                 <VStack gap='20px'>
                     <HStack gap='20px' fontSize='18px'>
                         <VStack>
                             <Text>Followers</Text>
-                            <Text>{followerCount}</Text>
+                            <Text>{loading ? '-' : followerCount}</Text>
                         </VStack>
                         <VStack>
                             <Text>Following</Text>
-                            <Text>{followingCount}</Text>
+                            <Text>{loading ? '-' : followingCount}</Text>
                         </VStack>
                     </HStack>
                     <Button w='100%'>Edit Profile</Button>
                 </VStack>
             </HStack>
-            <Text fontSize='18px'>{bio}</Text>
+            <Text fontSize='18px'>{loading ? '-' : bio}</Text>
         </VStack>
     )
 }
