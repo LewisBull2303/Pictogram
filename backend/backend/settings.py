@@ -32,6 +32,9 @@ CSRF_TRUSTED_ORIGINS = ['https://8000-lewisbull2303-instagram-spjqg3hzjk.app.cod
 
 AUTH_USER_MODEL = 'base.Users'
 
+SIMPLE_JWT = {
+    "USER_ID_FIELD":'username'
+}
 
 # Application definition
 
@@ -47,6 +50,12 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "base",
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
