@@ -58,7 +58,7 @@ class CustomTokenRefreshView(TokenRefreshView):
 
             res.data = {"success":True}
 
-            res = Response();
+            res = Response()
 
             res.set_cookie(
                 key='access_token',
