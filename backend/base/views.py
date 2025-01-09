@@ -5,6 +5,32 @@ from rest_framework.response import Response
 from .models import Users
 from .serializers import UserProfileSerializer
 
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
+
+class CustomTokenObtainPairView(TokenObtainPairView):
+    def post(self, request, *args, **kwargs):
+        response = super().post(request, *args, **kwargs)
+        tokens = response.data
+
+        access_token = tokens['access']
+        refresh = tokens['refresh']
+
+        res = Response()
+
+        res.data = {"success":True}
+
+        res.set_cookie(
+            key='access_token',
+            value=access_token,
+            httponly=True,
+            secure=True,
+            samesite='None',
+            path='/'
+        )
+
 # Create your views here.
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
