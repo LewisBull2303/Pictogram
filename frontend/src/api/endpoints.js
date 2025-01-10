@@ -8,7 +8,16 @@ const api =axios.create ({
     withCredentials:true,
 })
 
+api.interceptors.response.use(
+    (response) => response,
+)
+
 export const get_user_profile_data = async (username) => {
     const response = await api.get(`/user_data/${username}/`);
     return response.data;
+}
+
+export const login = async (username, password) => {
+    const response = await api.post('/token/');
+    return response.data
 }
