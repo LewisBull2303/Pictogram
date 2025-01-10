@@ -21,10 +21,10 @@ api.interceptors.response.use(
                 return api(original_request);
             } catch (refreshError) {
                 window.location.href = '/login'
-                return Promise.reject(refreshError);
+                return Promise.reject(refreshError)
             }
         }
-        return Promise.reject(refreshError);
+        return Promise.reject(error)
     }
 )
 
