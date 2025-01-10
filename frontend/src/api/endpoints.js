@@ -33,7 +33,7 @@ export const get_user_profile_data = async (username) => {
     return response.data;
 }
 
-export const refresh_token = async () => {
+const refresh_token = async () => {
     const response = await api.post('/token/refresh');
     return response.data
 }
