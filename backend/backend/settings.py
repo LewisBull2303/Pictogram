@@ -26,9 +26,9 @@ SECRET_KEY = "django-insecure-84#_z(!(u5japvrm%mm=#zc%fy!!ot5eqaf@hj!d)w@eu#6g43
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["8000-lewisbull2303-instagram-spjqg3hzjk.app.codeanywhere.com",'https://8000-lewisbull2303-instagram-spjqg3hzjk.app.codeanywhere.com/api']
+ALLOWED_HOSTS = ['127.0.0.1']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-lewisbull2303-instagram-spjqg3hzjk.app.codeanywhere.com']
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000']
 
 AUTH_USER_MODEL = 'base.Users'
 
@@ -72,6 +72,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://localhost:3000",
     "https://3000-lewisbull2303-instagram-spjqg3hzjk.app.codeanywhere.com",
     "https://8000-lewisbull2303-instagram-spjqg3hzjk.app.codeanywhere.com",
+    "http://127.0.0.1:8000"
 ]
 
 CORS_ALLOW_CREDENTIALS = True
