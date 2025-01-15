@@ -6,8 +6,13 @@ const Login = () => {
             <VStack>
                    <FormControl>
                         <FormLabel htmlFor='username'>Username</FormLabel>
-                        <Input type='text'></Input>
+                        <Input type='text' />
                    </FormControl>
+                   <FormControl>
+                        <FormLabel htmlFor='password'>Password</FormLabel>
+                        <Input type='password' />
+                   </FormControl>
+                   <Button>Login</Button>
             </VStack>
         </Flex>
     )
