@@ -39,6 +39,6 @@ const refresh_token = async () => {
 }
 
 export const login = async (username, password) => {
-    const response = await api.post('/token/');
+    const response = await api.post('/token/', {username, password});
     return response.data
 }
