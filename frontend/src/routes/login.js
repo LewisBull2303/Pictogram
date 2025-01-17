@@ -1,9 +1,10 @@
-import { VStack, Flex, FormControl, FormLabel, Input} from "@chakra-ui/react"
+import { VStack, Flex, FormControl, FormLabel, Input, Button, Heading} from "@chakra-ui/react"
 
 const Login = () => {
     return (
-        <Flex>
+        <Flex w='100%' justifyContent='center'>
             <VStack>
+                <Heading>Login</Heading>
                    <FormControl>
                         <FormLabel htmlFor='username'>Username</FormLabel>
                         <Input type='text' />
