@@ -2,7 +2,7 @@ import { VStack, Flex, FormControl, FormLabel, Input, Button, Heading} from "@ch
 
 const Login = () => {
     return (
-        <Flex w='100%' justifyContent='center'>
+        <Flex w='100%' h='calc(100vh - 90px)' justifyContent='center' alignItems='center'>
             <VStack>
                 <Heading>Login</Heading>
                    <FormControl>
