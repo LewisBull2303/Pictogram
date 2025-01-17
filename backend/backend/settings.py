@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
-CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000']
+CSRF_TRUSTED_ORIGINS = ['https://localhost:3000']
 
 AUTH_USER_MODEL = 'base.Users'
 
@@ -70,6 +70,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "https://localhost:3000",
+    "http://localhost:3000",
     "https://3000-lewisbull2303-instagram-spjqg3hzjk.app.codeanywhere.com",
     "https://8000-lewisbull2303-instagram-spjqg3hzjk.app.codeanywhere.com",
     "http://127.0.0.1:8000"
