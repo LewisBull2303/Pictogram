@@ -1,11 +1,11 @@
 import axios from 'axios'
-import {SERVER_URL} from '../constants/constants'
+import { SERVER_URL } from '../constants/constants'
 
 const BASE_URL = SERVER_URL
 
-const api =axios.create ({
+const api = axios.create({
     baseURL:BASE_URL,
-    withCredentials:true,
+    withCredentials:true
 })
 
 api.interceptors.response.use(
@@ -13,10 +13,10 @@ api.interceptors.response.use(
     async error => {
         const original_request = error.config
 
-        if(error.response?.status === 401 && !original_request._retry){
+        if (error.response?.status === 401 && !original_request._retry) {
             original_request._retry = true;
 
-            try{
+            try {
                 await refresh_token();
                 return api(original_request);
             } catch (refreshError) {
