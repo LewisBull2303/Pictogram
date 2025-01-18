@@ -1,5 +1,5 @@
 import { VStack, Flex, FormControl, FormLabel, Input, Button, Heading} from "@chakra-ui/react";
-import { login } from '../api/endpoints';
+import { register } from '../api/endpoints';
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 
@@ -10,16 +10,29 @@ const Register = () => {
     const [firstName, setFirstName ] = useState('')
     const [lastName, setLastName] = useState('')
     const [password, setPassword] = useState('')
-    const [confirmpassword, setConfirmPassword] = useState('')
+    const [confirmPassword, setConfirmPassword] = useState('')
     const navigate = useNavigate()
 
     const handleRegister = async () => {
-
+        if (password == confirmPassword){
+            try{
+                await register(username, email, firstName, lastName, password);
+                alert('successful registration')
+                navigate('login')
+            }
+            catch{
+                alert('error registering')
+            }
+            
+        }
+        else{
+            alert('password and confirm password do not match')
+        }
     }
 
     return (
         <Flex w='100%' h='calc(100vh - 90px)' justifyContent='center' alignItems='center'>
-            <VStack alignItems='start' w='95%' maxW='400px' gap='30px'>
+            <VStack alignItems='start' w='95%' maxW='400px' gap='20px'>
                 <Heading>Register</Heading>
                 <FormControl>
                         <FormLabel htmlFor='username'>Username</FormLabel>
@@ -51,4 +64,4 @@ const Register = () => {
     )
 }
 
-export default Login
+export default Register
