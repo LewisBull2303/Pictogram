@@ -11,14 +11,14 @@ const Register = () => {
     const [lastName, setLastName] = useState('')
     const [password, setPassword] = useState('')
     const [confirmPassword, setConfirmPassword] = useState('')
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     const handleRegister = async () => {
         if (password == confirmPassword){
             try{
                 await register(username, email, firstName, lastName, password);
                 alert('successful registration')
-                navigate('login')
+                navigate('/login')
             }
             catch{
                 alert('error registering')

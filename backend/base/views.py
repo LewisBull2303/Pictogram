@@ -14,10 +14,9 @@ from rest_framework_simplejwt.views import (
 def register(request):
     serializer = UserRegisterSerializer(data=request.data)
     if serializer.is_valid():
-        serializer.save
+        serializer.save()
         return Response(serializer.data)
-    else:
-        return Response(serializer.errors)
+    return Response(serializer.errors)
 
 
 class CustomTokenObtainPairView(TokenObtainPairView):

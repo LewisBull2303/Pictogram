@@ -5,7 +5,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 
 import Layout from './components/layout';
 import Login from './routes/login'
-import Register from '/routes/register'
+import Register from './routes/register'
 
 import UserProfile  from './routes/userprofile';  
 
