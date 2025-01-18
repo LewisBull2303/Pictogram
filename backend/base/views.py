@@ -3,12 +3,22 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from .models import Users
-from .serializers import UserProfileSerializer
+from .serializers import UserProfileSerializer, UserRegisterSerializer
 
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
 )
+
+@api_view(['POST'])
+def register(request):
+    serializer = UserRegisterSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save
+        return Response(serializer.data)
+    else:
+        return Response(serializer.errors)
+
 
 class CustomTokenObtainPairView(TokenObtainPairView):
     def post(self, request, *args, **kwargs):
