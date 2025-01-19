@@ -10,6 +10,11 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
 
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def authenticated(request):
+    return Response('authenticated!')
+
 @api_view(['POST'])
 def register(request):
     serializer = UserRegisterSerializer(data=request.data)
