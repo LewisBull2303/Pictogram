@@ -47,3 +47,8 @@ export const register = async (username, email, firstName, lastName, password) =
     const response = await api.post('/register/', {username:username, email:email, first_name:firstName, last_name:lastName, password:password});
     return response.data
 }
+
+export const get_auth = async () => {
+    const response = await api.get(`/authenticated/`);
+    return response.data
+}

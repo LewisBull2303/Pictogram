@@ -7,17 +7,22 @@ import Layout from './components/layout';
 import Login from './routes/login'
 import Register from './routes/register'
 
-import UserProfile  from './routes/userprofile';  
+import UserProfile  from './routes/userprofile'; 
+import PrivateRoute from './components/private_route';
+
+import { AuthProvider } from './contexts/useAuth';
 
 function App() {
   return (
     <ChakraProvider>
       <Router>
-        <Routes>
-          <Route element={<Layout><UserProfile/></Layout>} path='/:username' />
-          <Route element={<Layout><Login/></Layout>} path='/login' />
-          <Route element={<Layout><Register/></Layout>} path='/register' />
-        </Routes>
+        <AuthProvider>
+          <Routes>
+            <Route element={<Layout><PrivateRoute><UserProfile></UserProfile></PrivateRoute></Layout>} path='/:username' />
+            <Route element={<Layout><Login/></Layout>} path='/login' />
+            <Route element={<Layout><Register/></Layout>} path='/register' />
+          </Routes>
+        </AuthProvider>
       </Router>
     </ChakraProvider>
   );
