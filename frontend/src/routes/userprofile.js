@@ -38,13 +38,12 @@ const UserDetails = ({username}) => {
     const [isMyProfile, setIsMyProfile] = useState(false)
     const [following, setFollowing] = useState(false)
 
-    const hanldeToggleFollow = async () =>{
+    const handleToggleFollow = async () => {
         const data = await toggleFollow(username);
-        if (data.now_following){
+        if (data.now_following) {
             setFollowerCount(followerCount+1)
             setFollowing(true)
-        }
-        else{
+        } else {
             setFollowerCount(followerCount-1)
             setFollowing(false)
         }
@@ -99,7 +98,7 @@ const UserDetails = ({username}) => {
                             isMyProfile ?
                                 <Button w='100%'>Edit Profile</Button>
                             :
-                            <Button colorScheme='blue' w='100%'>{following ? 'Unfollow' : 'Follow'}</Button>
+                            <Button onClick={handleToggleFollow} colorScheme='blue' w='100%'>{following ? 'Unfollow' : 'Follow'}</Button>
 
                     }
                 </VStack>

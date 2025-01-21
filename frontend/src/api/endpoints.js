@@ -53,7 +53,7 @@ export const get_auth = async () => {
     return response.data
 }
 
-export const toggleFollow = async (username, email, firstName, lastName, password) => {
+export const toggleFollow = async (username) => {
     const response = await api.post('/toggle_follow/', {username:username});
     return response.data
 }

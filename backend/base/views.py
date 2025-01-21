@@ -120,7 +120,7 @@ def toggleFollow(request):
             my_user = Users.objects.get(username=request.user.username)
             user_to_follow = Users.objects.get(username=request.data['username'])
         except Users.DoesNotExist:
-            return Response({'error': 'Users not found'}, status=404)
+            return Response({'error':'users does not exist'})
         
         if my_user in user_to_follow.followers.all():
             user_to_follow.followers.remove(my_user)
