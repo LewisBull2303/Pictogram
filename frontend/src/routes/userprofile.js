@@ -1,6 +1,6 @@
-import { Text, VStack, Flex, Box, Heading, HStack, Image, Button} from '@chakra-ui/react'
+import { Text, VStack, Flex, Box, Heading, HStack, Image, Button, Spacer} from '@chakra-ui/react'
 import { useEffect, useState } from 'react';
-import { get_user_profile_data } from '../api/endpoints';
+import { get_user_profile_data, toggleFollow } from '../api/endpoints';
 import { SERVER_URL } from '../constants/constants';
 
 const UserProfile = () => {
@@ -37,6 +37,18 @@ const UserDetails = ({username}) => {
 
     const [isMyProfile, setIsMyProfile] = useState(false)
     const [following, setFollowing] = useState(false)
+
+    const hanldeToggleFollow = async () =>{
+        const data = await toggleFollow(username);
+        if (data.now_following){
+            setFollowerCount(followerCount+1)
+            setFollowing(true)
+        }
+        else{
+            setFollowerCount(followerCount-1)
+            setFollowing(false)
+        }
+    }
  
     useEffect(() => {
 
@@ -80,10 +92,14 @@ const UserDetails = ({username}) => {
                         </VStack>
                     </HStack>
                     {
-                        isMyProfile ?
-                            <Button w='100%'>Edit Profile</Button>
+                        loading ? 
+                            <Spacer />
                         :
-                        <Button colorScheme='blue' w='100%'>{following ? 'Unfollow' : 'Follow'}</Button>
+                        
+                            isMyProfile ?
+                                <Button w='100%'>Edit Profile</Button>
+                            :
+                            <Button colorScheme='blue' w='100%'>{following ? 'Unfollow' : 'Follow'}</Button>
 
                     }
                 </VStack>

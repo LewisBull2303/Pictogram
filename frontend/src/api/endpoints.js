@@ -52,3 +52,8 @@ export const get_auth = async () => {
     const response = await api.get(`/authenticated/`);
     return response.data
 }
+
+export const toggleFollow = async (username, email, firstName, lastName, password) => {
+    const response = await api.post('/toggle_follow/', {username:username});
+    return response.data
+}
