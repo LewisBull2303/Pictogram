@@ -102,6 +102,12 @@ def get_user_profile_data(request, pk):
             return Response({'error': 'User not found'}, status=404)
         
         serializer = UserProfileSerializer(user, many=False)
-        return Response(serializer.data)
+
+        following = False
+        
+        if request.user in user.followers.all():
+            following = True
+
+        return Response({**serializer.data, 'is_my_profile':request.user.username == user.username, 'following':following})
     except:
         return Response({'error': 'An error getting user data'})

@@ -34,6 +34,9 @@ const UserDetails = ({username}) => {
     const [profileImage, setProfileImage] = useState('')
     const [followerCount, setFollowerCount] = useState(0)
     const [followingCount, setFollowingCount] = useState(0)
+
+    const [isMyProfile, setIsMyProfile] = useState(false)
+    const [following, setFollowing] = useState(false)
  
     useEffect(() => {
 
@@ -44,7 +47,9 @@ const UserDetails = ({username}) => {
                 setProfileImage(data.profile_image)
                 setFollowerCount(data.follower_count)
                 setFollowingCount(data.following_count)
-                console.log(data.profileImage)
+
+                setIsMyProfile(data.is_my_profile)
+                setFollowing(data.following)
             } catch {
                 console.log('error')
             } finally {
@@ -74,7 +79,13 @@ const UserDetails = ({username}) => {
                             <Text>{loading ? '-' : followingCount}</Text>
                         </VStack>
                     </HStack>
-                    <Button w='100%'>Edit Profile</Button>
+                    {
+                        isMyProfile ?
+                            <Button w='100%'>Edit Profile</Button>
+                        :
+                        <Button colorScheme='blue' w='100%'>{following ? 'Unfollow' : 'Follow'}</Button>
+
+                    }
                 </VStack>
             </HStack>
             <Text fontSize='18px'>{loading ? '-' : bio}</Text>
