@@ -1,7 +1,6 @@
-import {createContext, useContext, useEffect, useState } from 'react'
+import { createContext, useContext, useState, useEffect } from 'react'
 import { get_auth, login } from '../api/endpoints';
 import { useNavigate } from 'react-router-dom';
-import {useAuth} from "../context/useAuth";
 
 const AuthContext = createContext();
 

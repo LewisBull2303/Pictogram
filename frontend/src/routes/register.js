@@ -14,7 +14,7 @@ const Register = () => {
     const navigate = useNavigate();
 
     const handleRegister = async () => {
-        if (password == confirmPassword){
+        if (password === confirmPassword){
             try{
                 await register(username, email, firstName, lastName, password);
                 alert('successful registration')
