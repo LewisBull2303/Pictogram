@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import { get_user_posts, get_user_profile_data, toggleFollow } from '../api/endpoints';
 import { SERVER_URL } from '../constants/constants';
 
+import Post from '../components/posts';
+
 const UserProfile = () => {
 
     const get_username_from_url = () => {
