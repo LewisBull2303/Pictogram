@@ -24,7 +24,7 @@ const UserProfile = () => {
                 <Box w='100%' mt='40px'>
                     <UserDetails username={username}/>
                 </Box>
-                <Box w='100%' mt='30px'>
+                <Box w='100%' mt='50px'>
                     <UserPosts username={username} />
                 </Box>
             </VStack>
@@ -132,7 +132,7 @@ const UserPosts = ({ username }) => {
         fetchPosts();
     }, [username]);
     return (
-        <Flex wrap="wrap">
+        <Flex w='100%' wrap="wrap" gap='30px' pb='50px'>
             {loading ?
                 <Text>Loading...</Text>
             :
