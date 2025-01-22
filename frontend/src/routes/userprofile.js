@@ -133,21 +133,13 @@ const UserPosts = ({ username }) => {
     }, [username]);
     return (
         <Flex wrap="wrap">
-            {loading ? (
+            {loading ?
                 <Text>Loading...</Text>
-            ) : (
-                posts.map((post, index) => (
-                    <Box key={index} m="10px">
-                        <Image
-                            src={post.post_image ? `${SERVER_URL}${post.post_image}` : null}
-                            
-                            alt={`Post ${index}`}
-                            boxSize="200px"
-                            objectFit="cover"
-                        />
-                    </Box>
-                ))
-            )}
+            :
+                posts.map((post) => { 
+                    return <Post key={post.id} username={post.username} post_image={post.post_image} formatted_date={post.formatted_date} likes={post.likes} like_count={post.like_count}/>
+                })
+            }
         </Flex>
     );
 };
