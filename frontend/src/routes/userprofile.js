@@ -1,6 +1,6 @@
 import { Text, VStack, Flex, Box, Heading, HStack, Image, Button, Spacer} from '@chakra-ui/react'
 import { useEffect, useState } from 'react';
-import { get_user_profile_data, toggleFollow } from '../api/endpoints';
+import { get_user_posts, get_user_profile_data, toggleFollow } from '../api/endpoints';
 import { SERVER_URL } from '../constants/constants';
 
 const UserProfile = () => {
@@ -21,6 +21,9 @@ const UserProfile = () => {
             <VStack w='75%' >
                 <Box w='100%' mt='40px'>
                     <UserDetails username={username}/>
+                </Box>
+                <Box w='100%' mt='30px'>
+                    <UserPosts username={username} />
                 </Box>
             </VStack>
         </Flex>
@@ -107,5 +110,48 @@ const UserDetails = ({username}) => {
         </VStack>
     )
 }
+
+const UserPosts = ({username}) => {
+
+    const [posts, setPosts] = useState([])
+    const [loading, setLoading] = useState([true])
+    
+
+    useEffect(() => {
+
+        const fetchPosts = async () => {
+            try{
+                const posts = await get_user_posts(username)
+                setPosts(posts)
+            }
+            catch{
+                alert('Error getting posts')
+            }
+            finally{
+                setLoading(false)
+            }
+        }
+
+        fetchPosts()
+    }, [])
+
+    return (
+        <Flex>
+            {loading ? 
+                <Text>Loading...</Text>
+            :
+                posts.map((post) => {
+                    return <Text>{post.description}</Text>
+                })
+            }
+        </Flex>
+    )
+}
+
+
+
+
+
+
 console.log(SERVER_URL)
 export default UserProfile
