@@ -8,7 +8,6 @@ const Post = ({username, post_image, formatted_date, likes, like_count}) => {
             <Text>{username}</Text>
             <Image src={post_image ? `${SERVER_URL}${post_image}` : null}></Image>
             <Text>{formatted_date}</Text>
-            <Text>{likes}</Text>
             <Text>{like_count}</Text>
         </VStack>
     )
