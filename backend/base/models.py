@@ -11,3 +11,8 @@ class Users(AbstractUser):
     def __str__(self):
         return self.username
 
+class Post(models.Model):
+    user = models.ForeignKey(Users, on_delete=models.CASCADE, related_name='posts')
+    post_image = models.ImageField(upload_to="post_images/", blank=True, null=False)
+    created_at = models.DateField(auto_now_add=True)
+    likes = models.ManyToManyField(Users, related_name='post_likes', blank=True)
