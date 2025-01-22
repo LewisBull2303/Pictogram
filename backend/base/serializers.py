@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Users
+from .models import Users, Post
 
 class UserRegisterSerializer(serializers.ModelSerializer):
 
@@ -34,3 +34,14 @@ class UserProfileSerializer(serializers.ModelSerializer):
 
     def get_following_count(self, obj):
         return obj.following.count()
+    
+class PostSerializer(serializers.ModelSerializer):
+
+    username = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Post
+        fields = ['user', 'post_image', 'created_at', 'likes']
+
+    def get_username(self, obj):
+        return obj.user.username
