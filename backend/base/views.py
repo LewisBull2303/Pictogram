@@ -140,3 +140,7 @@ def get_users_posts(request, pk):
         return Response({'error': 'User not found'}, status=404)
     
     posts = user.posts.all().order_by('-created_at')
+
+    serializer = PostSerializer(posts, many=True)
+
+    return Response(serializer.data)
