@@ -29,5 +29,5 @@ urlpatterns = [
     path('register/', register),
     path('authenticated/', auhtenticated),
     path('toggle_follow/', toggleFollow),
-    path('posts/<str:pk>/', get_users_posts)
+    path('posts/<str:pk>/', get_users_posts),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

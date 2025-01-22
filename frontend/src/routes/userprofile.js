@@ -79,7 +79,7 @@ const UserDetails = ({username}) => {
             <Heading>@{username}</Heading>
             <HStack gap='20px'>
                 <Box boxSize='150px' border='2px solid' borderColor='grey.700' bg='white' borderRadius='full' overflow='hidden'> 
-                <Image src={loading ? '' : `${SERVER_URL}${profileImage}`}boxSize='100%' objectFit='cover'/>
+                <Image src={loading ? null : `${SERVER_URL}${profileImage}`}boxSize='100%' objectFit='cover'/>
 
                 </Box>
                 <VStack gap='20px'>
@@ -111,47 +111,47 @@ const UserDetails = ({username}) => {
     )
 }
 
-const UserPosts = ({username}) => {
-
-    const [posts, setPosts] = useState([])
-    const [loading, setLoading] = useState([true])
-    
+const UserPosts = ({ username }) => {
+    const [posts, setPosts] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-
         const fetchPosts = async () => {
-            try{
-                const posts = await get_user_posts(username)
-                setPosts(posts)
+            try {
+                const postsData = await get_user_posts(username);
+                setPosts(postsData);
+            } catch {
+                alert('Error getting posts');
+            } finally {
+                setLoading(false);
             }
-            catch{
-                alert('Error getting posts')
-            }
-            finally{
-                setLoading(false)
-            }
-        }
+        };
 
-        fetchPosts()
-    }, [])
-
+        fetchPosts();
+    }, [username]);
     return (
-        <Flex>
-            {loading ? 
+        <Flex wrap="wrap">
+            {loading ? (
                 <Text>Loading...</Text>
-            :
-                posts.map((post) => {
-                    return <Text>{post.description}</Text>
-                })
-            }
+            ) : (
+                posts.map((post, index) => (
+                    <Box key={index} m="10px">
+                        <Image
+                            src={post.post_image ? `${SERVER_URL}${post.post_image}` : null}
+                            
+                            alt={`Post ${index}`}
+                            boxSize="200px"
+                            objectFit="cover"
+                        />
+                    </Box>
+                ))
+            )}
         </Flex>
-    )
-}
+    );
+};
 
 
 
 
 
-
-console.log(SERVER_URL)
 export default UserProfile
