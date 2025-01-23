@@ -64,6 +64,6 @@ export const get_user_posts = async (username) => {
 } 
 
 export const toggleLike = async (id) => {
-    const response = await api.post('toggleLike/', {id:id})
+    const response = await api.post('/toggleLike/', {id:id})
     return response.data
 }
