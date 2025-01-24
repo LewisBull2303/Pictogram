@@ -9,6 +9,7 @@ import Register from './routes/register'
 
 import UserProfile  from './routes/userprofile'; 
 import PrivateRoute from './components/private_route';
+import CreatePost from './routes/create_post';
 
 import { AuthProvider } from './contexts/useAuth';
 
@@ -18,7 +19,8 @@ function App() {
       <Router>
         <AuthProvider>
           <Routes>
-            <Route element={<Layout><PrivateRoute><UserProfile></UserProfile></PrivateRoute></Layout>} path='/:username' />
+            <Route element={<Layout><PrivateRoute><UserProfile/></PrivateRoute></Layout>} path='/:username' />
+            <Route element={<Layout><PrivateRoute><CreatePost/></PrivateRoute></Layout>} path='/:create/post' />
             <Route element={<Layout><Login/></Layout>} path='/login' />
             <Route element={<Layout><Register/></Layout>} path='/register' />
           </Routes>

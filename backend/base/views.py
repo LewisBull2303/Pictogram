@@ -181,3 +181,24 @@ def toggleLike(request):
     except:
         return Response({'error':'failed to like post'})
     
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def create_post(request):
+    try:
+        data = request.data
+
+        try:
+            user = Users.objects.get(username=request.user.username)
+        except Users.DoesNotExist:
+            return Response({'error': 'User not found'}, status=404)
+        
+        post = Post.objects.create(
+            user=user,
+            post_image=data['post_image']
+        )
+        
+        seralizer = PostSerializer(post, many=False)
+
+        return Response(seralizer.data)
+    except:
+        return Response({'Error':'Error Creating Post'})
