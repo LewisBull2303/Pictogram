@@ -185,20 +185,26 @@ def toggleLike(request):
 @permission_classes([IsAuthenticated])
 def create_post(request):
     try:
-        data = request.data
+        # Check if 'post_image' is in the uploaded files
+        post_image = request.FILES.get('post_image')
+
+        if not post_image:
+            return Response({'error': 'No image provided'}, status=400)
 
         try:
             user = Users.objects.get(username=request.user.username)
         except Users.DoesNotExist:
             return Response({'error': 'User not found'}, status=404)
         
+        # Create the post with the image
         post = Post.objects.create(
             user=user,
-            post_image=data['post_image']
+            post_image=post_image
         )
         
-        seralizer = PostSerializer(post, many=False)
+        # Serialize and return the created post
+        serializer = PostSerializer(post, many=False)
 
-        return Response(seralizer.data)
-    except:
-        return Response({'Error':'Error Creating Post'})
+        return Response(serializer.data)
+    except Exception as e:
+        return Response({'Error': f'Error Creating Post: {str(e)}'})

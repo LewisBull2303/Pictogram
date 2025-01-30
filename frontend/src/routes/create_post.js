@@ -18,11 +18,8 @@ const CreatePost = () => {
             alert('Please select and Image First')
             return
         }
-
-        const formData = new FormData()
-        formData.append('post_image', image)
         try {
-            await create_post(formData)
+            await create_post(image)
         }
         catch{
             alert('Error Creating your post')

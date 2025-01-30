@@ -69,6 +69,19 @@ export const toggleLike = async (id) => {
 }
 
 export const create_post = async (post_image) => {
-    const response = await api.post('/create_post/', {post_image:post_image})
-    return response.data
-}
+    const formData = new FormData();
+    formData.append("post_image", post_image); 
+
+    try {
+        const response = await api.post('/create_post/', formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data', 
+            }
+        });
+
+        return response.data;
+    } catch (error) {
+        console.error("Error creating post:", error);
+        throw error;
+    }
+};
