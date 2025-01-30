@@ -2,6 +2,8 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
+from rest_framework.pagination import PageNumberPagination
+
 from .models import Users, Post
 from .serializers import UserProfileSerializer, UserRegisterSerializer, PostSerializer
 
@@ -208,3 +210,35 @@ def create_post(request):
         return Response(serializer.data)
     except Exception as e:
         return Response({'Error': f'Error Creating Post: {str(e)}'})
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_posts(request):
+
+    try:
+        my_user = Users.objects.get(username=request.user.username)
+    except Users.DoesNotExist:
+        return Response({'error': 'User not found'}, status=404)
+
+    posts = Post.objects.all().order_by('-created_at')
+
+    paginator = PageNumberPagination()
+    paginator.page_size = 10
+
+    result_page = paginator.paginate_queryset(posts, request)
+
+    serializer = PostSerializer(posts, many=True)
+
+    data = []
+
+    for post in serializer.data:
+        new_post = {}
+
+        if my_user.username in post['likes']:
+            new_post = {**post, 'liked':True}
+        else:
+            new_post = {**post, 'liked':False}
+        data.append(new_post)
+        
+
+    return paginator.get_paginated_response(data)
