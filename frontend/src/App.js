@@ -6,6 +6,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import Layout from './components/layout';
 import Login from './routes/login'
 import Register from './routes/register'
+import Home from './routes/home';
 
 import UserProfile  from './routes/userprofile'; 
 import PrivateRoute from './components/private_route';
@@ -21,6 +22,7 @@ function App() {
           <Routes>
             <Route element={<Layout><PrivateRoute><UserProfile/></PrivateRoute></Layout>} path='/:username' />
             <Route element={<Layout><PrivateRoute><CreatePost/></PrivateRoute></Layout>} path='/:create/post' />
+            <Route element={<Layout><PrivateRoute><Home/></PrivateRoute></Layout>} path='/' />
             <Route element={<Layout><Login/></Layout>} path='/login' />
             <Route element={<Layout><Register/></Layout>} path='/register' />
           </Routes>

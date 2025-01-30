@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 import { CgProfile } from "react-icons/cg";
 import { IoAddCircleOutline } from "react-icons/io5";
+import { IoHomeOutline } from "react-icons/io5";
 
 const NavBar = () => {
 
@@ -19,6 +20,7 @@ const NavBar = () => {
                 <HStack gap='20px'>
                     <Text onClick={(route) => handleNavigation('')}><CgProfile size='22px'/></Text>
                     <Text onClick={(route) => handleNavigation('create/post')}><IoAddCircleOutline size='22px' /></Text>
+                    <Text onClick={(route) => handleNavigation('/')}><IoHomeOutline size='22px'/></Text>
                 </HStack>
             </HStack>
         </Flex>
