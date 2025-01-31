@@ -1,8 +1,7 @@
-import { Heading, VStack, Flex, Text, Image } from "@chakra-ui/react"
+import { Heading, VStack, Flex, Text, Image, Button } from "@chakra-ui/react"
 import { useEffect, useState } from "react"
 import { get_posts } from "../api/endpoints"
 import Post from "../components/posts"
-import { SERVER_URL } from "../constants/constants"
 
 const Home = () => {
 
@@ -11,9 +10,9 @@ const Home = () => {
     const [nextPage, setNextPage] = useState(1)
 
     const fetchData = async () => {
-        const posts = await get_posts(nextPage)
-        setPosts(...posts, [posts.results])
-        setNextPage(posts.next ? nextPage+1 : null)
+        const data = await get_posts(nextPage)
+        setPosts(...posts, [...data.results])
+        setNextPage(data.next ? nextPage+1 : null)
     }
 
     useEffect(() => {
@@ -26,7 +25,13 @@ const Home = () => {
         finally {
             setLoading(false)
         }
-    })
+    }, [])
+
+    const loadMorePosts = () => {
+        if (nextPage){
+            fetchData()
+        }
+    }
 
     return (
         <Flex w='100%' justifyContent='center' pt='50px'>
@@ -42,6 +47,12 @@ const Home = () => {
                         :
 
                         <></>
+                }
+
+                {
+                    nextPage && !loading && (
+                        <Button colorScheme='blue'onClick={loadMorePosts} w='100%'>Load More</Button>
+                    )
                 }
             </VStack>
         </Flex>

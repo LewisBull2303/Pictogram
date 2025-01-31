@@ -1,10 +1,12 @@
 import { VStack, Flex, Heading, FormControl, FormLabel, Input, Button,} from "@chakra-ui/react"
 import { create_post } from '../api/endpoints'
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 const CreatePost = () => {
 
     const [image, setImage] = useState('')
+    const nav = useNavigate()
 
     const handleFileChange = (e) => {
         const file = e.target.files[0]
@@ -20,6 +22,7 @@ const CreatePost = () => {
         }
         try {
             await create_post(image)
+            nav('/')
         }
         catch{
             alert('Error Creating your post')
