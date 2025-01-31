@@ -86,7 +86,7 @@ export const create_post = async (post_image) => {
     }
 }
 
-export const get_posts = async () => {
-    const response = await api.get('/get_posts/')
+export const get_posts = async (num) => {
+    const response = await api.get(`/get_posts/?page=${num}`)
     return response.data
 }
