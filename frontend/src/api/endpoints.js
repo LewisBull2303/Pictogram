@@ -84,4 +84,9 @@ export const create_post = async (post_image) => {
         console.error("Error creating post:", error);
         throw error;
     }
-};
+}
+
+export const get_posts = async () => {
+    const response = await api.get('/get_posts/')
+    return response.data
+}
