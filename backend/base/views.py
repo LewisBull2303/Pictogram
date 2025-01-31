@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from rest_framework.pagination import PageNumberPagination
 
 from .models import Users, Post
-from .serializers import UserProfileSerializer, UserRegisterSerializer, PostSerializer
+from .serializers import UserProfileSerializer, UserRegisterSerializer, PostSerializer, UserSerializer
 
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
@@ -242,3 +242,8 @@ def get_posts(request):
         
 
     return paginator.get_paginated_response(data)
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def search_user(request):
+    query = request.query_params.get('')
