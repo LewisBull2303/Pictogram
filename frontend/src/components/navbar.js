@@ -7,6 +7,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { FiUserPlus } from "react-icons/fi";
 import { MdOutlineLogin } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
+import { IoSettingsOutline } from "react-icons/io5";
 
 
 const NavBar = () => {
@@ -34,6 +35,7 @@ const NavBar = () => {
                     <Text onClick={(route) => handleNavigation('')}><IoHomeOutline size='22px'/></Text>
                     <Text onClick={(route) => handleNavigation('register')}><FiUserPlus size='20px'/></Text>
                     <Text onClick={(route) => handleNavigation('login')}><MdOutlineLogin size='20px'/></Text>
+                    <Text onClick={(route) => handleNavigation('settings')}><IoSettingsOutline size='20px'/></Text>
                 </HStack>
             </HStack>
         </Flex>
