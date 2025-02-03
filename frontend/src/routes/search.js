@@ -1,6 +1,22 @@
+import { Flex, HStack, VStack, Heading } from "@chakra-ui/react"
 
 const Search = () => {
-    return <h1>search</h1>
+    return 
+    (
+        <Flex>
+            <VStack>
+                <Heading>
+
+                </Heading>
+                <HStack>
+
+                </HStack>
+                <VStack>
+                    
+                </VStack>
+            </VStack>
+        </Flex>
+    )
 }
 
 export default Search
