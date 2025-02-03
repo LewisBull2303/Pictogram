@@ -1,4 +1,4 @@
-import { Button, Flex, FormControl, FormLabel, Heading, HStack, Input, Textarea, VStack } from "@chakra-ui/react"
+import { Button, Flex, FormControl, FormLabel, Heading, Input, Textarea, VStack } from "@chakra-ui/react"
 import { useState } from "react"
 import { update_user, logout} from "../api/endpoints"
 
@@ -13,13 +13,13 @@ const Settings = () => {
     const [firstName, setFirstName] = useState(storage ? storage.first_name : '')
     const [lastName, setLastName] = useState(storage ? storage.last_name : '')
     const [bio, setBio] = useState(storage ? storage.bio : '')
-    const [profile_image, setProfileImage] = useState(storage ? storage.profile_image : null)
+    const [profile_image, setProfileImage] = useState(storage ? storage.profile_image : '')
 
     const nav = useNavigate();
 
     const handleLogout = async () => {
         try{
-            await logout()
+            await logout();
             nav('/login')
         } catch{
             alert('error logging out')
@@ -27,10 +27,10 @@ const Settings = () => {
     }
 
     const handleUpdate = async () => {
-        try{
-            await update_user({'username':username, 'profile_image':profile_image, 'email':email, 'first_name':firstName, 'last_name':lastName, 'bio':bio})
-            localStorage.setItem('userData', JSON.stringify({'username':username, 'email':email, 'first_name':firstName, 'last_name':lastName, 'bio':bio}))
-            alert('successfully updates')
+        try {
+            await update_user({"username":username, "profile_image": profile_image, "email":email, "first_name":firstName, "last_name":lastName, "bio":bio})
+            localStorage.setItem("userData", JSON.stringify({"username":username, "email":email, "first_name":firstName, "last_name":lastName, "bio":bio}))
+            alert('successfully updated')
         } catch {
             alert('error updating details')
         }

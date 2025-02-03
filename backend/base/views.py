@@ -268,13 +268,13 @@ def search_user(request):
 @api_view(['PATCH'])
 @permission_classes([IsAuthenticated])
 def update_user_details(request):
-    
+
     data = request.data
 
     try:
         user = Users.objects.get(username=request.user.username)
     except Users.DoesNotExist:
-        return Response({'error': 'User not found'}, status=404)
+        return Response({'error':'user does not exist'})
     
     serializer = UserSerializer(user, data, partial=True)
 
@@ -282,7 +282,7 @@ def update_user_details(request):
         serializer.save()
         return Response({**serializer.data, "success":True})
     
-    return Response({**serializer.errors, "success":False})
+    return Response({**serializer.errors, "success": False})
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
