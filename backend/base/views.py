@@ -250,3 +250,34 @@ def search_user(request):
     users = Users.objects.filter(username__icontains=query)
     serializer = UserSerializer(users, many=True)
     return Response(serializer.data)
+
+@api_view(['PATCH'])
+@permission_classes([IsAuthenticated])
+def update_user_details(request):
+    
+    data = request.data
+
+    try:
+        user = Users.objects.get(username=request.user.username)
+    except Users.DoesNotExist:
+        return Response({'error': 'User not found'}, status=404)
+    
+    serializer = UserSerializer(user, data, partial=True)
+
+    if serializer.is_valid():
+        serializer.save()
+        return Response({**serializer.data, "success":True})
+    
+    return Response({**serializer.errors, "success":False})
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def logout(request):
+    try:
+        res = Response()
+        res.data = {"success":True}
+        res.delete_cookie('access_token', path='/', samesite='None')
+        res.delete_cookie('refresh_token', path='/', samesite='None')
+        return res
+    except:
+        return Response({"success":False})
