@@ -8,6 +8,7 @@ import Login from './routes/login'
 import Register from './routes/register'
 import Home from './routes/home';
 import Search from './routes/search';
+import Settings from './routes/settings';
 
 import UserProfile  from './routes/userprofile'; 
 import PrivateRoute from './components/private_route';
@@ -25,6 +26,7 @@ function App() {
             <Route element={<Layout><PrivateRoute><CreatePost/></PrivateRoute></Layout>} path='/:create/post' />
             <Route element={<Layout><PrivateRoute><Home/></PrivateRoute></Layout>} path='/' />
             <Route element={<Layout><PrivateRoute><Search/></PrivateRoute></Layout>} path='/search' />
+            <Route element={<Layout><PrivateRoute><Settings/></PrivateRoute></Layout>} path='/settings' />
             <Route element={<Layout><Login/></Layout>} path='/login' />
             <Route element={<Layout><Register/></Layout>} path='/register' />
           </Routes>
