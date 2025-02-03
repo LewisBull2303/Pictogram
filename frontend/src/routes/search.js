@@ -1,4 +1,4 @@
-import { Flex, HStack, VStack, Heading, Input, Button } from "@chakra-ui/react"
+import { Flex, HStack, VStack, Heading, Input, Button, Box, Image, Text } from "@chakra-ui/react"
 import { useState } from "react"
 import { search_users } from "../api/endpoints"
 
@@ -23,11 +23,30 @@ const Search = () => {
                 <VStack w='100%'>
                     {
                         users.map((users) => {
-                            return <Heading>{users.username}</Heading>
+                            return <UserProfile username={users.username} profile_image={users.profile_image} first_name={users.first_name} last_name={users.last_name}/>
                         })
                     }
                 </VStack>
             </VStack>
+        </Flex>
+    )
+}
+
+const UserProfile = ({username, profile_image, first_name, last_name}) => {
+    return (
+        <Flex>
+            <HStack>
+
+                <Box>
+                    <Image></Image>
+                </Box>
+
+                <VStack>
+                    <Text></Text>
+                    <Text></Text>
+                </VStack>
+
+            </HStack>
         </Flex>
     )
 }
