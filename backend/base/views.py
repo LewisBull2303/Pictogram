@@ -34,10 +34,24 @@ class CustomTokenObtainPairView(TokenObtainPairView):
 
             access_token = tokens['access']
             refresh_token = tokens['refresh']
+            username = request.data['username']
+
+            try:
+                user = Users.objects.get(username=username)
+            except Users.DoesNotExist:
+                return Response({'error': 'User not found'}, status=404)
 
             res = Response()
 
-            res.data = {"success":True}
+            res.data = {"success":True,
+                        'user': {
+                            'username':user.username,
+                            'bio':user.bio,
+                            'email':user.email,
+                            'first_name':user.first_name,
+                            'last_name':user.last_name
+                            }
+                        }
 
             res.set_cookie(
                 key='access_token',
