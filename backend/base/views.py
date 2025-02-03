@@ -246,4 +246,7 @@ def get_posts(request):
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def search_user(request):
-    query = request.query_params.get('')
+    query = request.query_params.get('query', '')
+    users = Users.objects.filter(username__icontains=query)
+    serializer = UserSerializer(users, many=True)
+    return Response(serializer.data)
