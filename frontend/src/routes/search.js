@@ -2,6 +2,7 @@ import { Flex, HStack, VStack, Heading, Input, Button, Box, Image, Text } from "
 import { useState } from "react"
 import { search_users } from "../api/endpoints"
 import { SERVER_URL } from "../constants/constants"
+import { useNavigate } from "react-router-dom"
 
 const Search = () => {
 
@@ -34,17 +35,24 @@ const Search = () => {
 }
 
 const UserProfile = ({username, profile_image, first_name, last_name}) => {
+
+    const nav = useNavigate()
+
+    const handleNav = () => {
+        nav(`/${username}`)
+    }
+
     return (
-        <Flex>
-            <HStack>
+        <Flex onClick={handleNav} w='100%' h='100px' border='1px solid' borderColor='gray.300' borderRadius='8px' bg='white' justifyContent='center' alignItems='center'>
+            <HStack w='90%' gap='20px' alignItems='center'>
 
                 <Box boxSize='70px' borderRadius='full' overflow='hidden' bg='white' border='1px solid'>
                     <Image src={`${SERVER_URL}${profile_image}`} boxSize='100%' objectFit='cover'/>
                 </Box>
 
-                <VStack>
-                    <Text>{first_name} {last_name}</Text>
-                    <Text>{username}</Text>
+                <VStack alignItems='start' gap='3px'>
+                    <Text fontWeight='medium'>{first_name} {last_name}</Text>
+                    <Text color='gray.600' fontSize='15px'>@{username}</Text>
                 </VStack>
 
             </HStack>
