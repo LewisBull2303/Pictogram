@@ -17,13 +17,19 @@ const NavBar = () => {
         nav(`/${route}`)
     }
 
+    const handleNavigateUser = () => {
+        const username = JSON.parse(localStorage.getItem('userData'))['username']
+        nav(`/${username}`)
+        window.location.reload()
+    }
+
     return (
         <Flex w='100vw' h='90px' bg='blue.600' justifyContent="center" alignItems='center'>
             <HStack w='90%' justifyContent='space-between' color='white'>
                 <Text fontSize='24px' fontWeight='bold'>Clonestagram</Text>
                 <HStack gap='20px'>
                     <Text onClick={(route) => handleNavigation('search')}><IoSearch size='22px'/></Text>
-                    <Text onClick={(route) => handleNavigation('JohnDoe1')}><CgProfile size='22px'/></Text>
+                    <Text onClick={handleNavigateUser}><CgProfile size='22px'/></Text>
                     <Text onClick={(route) => handleNavigation('create/post')}><IoAddCircleOutline size='24px' /></Text>
                     <Text onClick={(route) => handleNavigation('')}><IoHomeOutline size='22px'/></Text>
                     <Text onClick={(route) => handleNavigation('register')}><FiUserPlus size='20px'/></Text>
