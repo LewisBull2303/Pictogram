@@ -1,6 +1,7 @@
 import { Flex, HStack, VStack, Heading, Input, Button, Box, Image, Text } from "@chakra-ui/react"
 import { useState } from "react"
 import { search_users } from "../api/endpoints"
+import { SERVER_URL } from "../constants/constants"
 
 const Search = () => {
 
@@ -37,13 +38,13 @@ const UserProfile = ({username, profile_image, first_name, last_name}) => {
         <Flex>
             <HStack>
 
-                <Box>
-                    <Image></Image>
+                <Box boxSize='70px' borderRadius='full' overflow='hidden' bg='white' border='1px solid'>
+                    <Image src={`${SERVER_URL}${profile_image}`} boxSize='100%' objectFit='cover'/>
                 </Box>
 
                 <VStack>
-                    <Text></Text>
-                    <Text></Text>
+                    <Text>{first_name} {last_name}</Text>
+                    <Text>{username}</Text>
                 </VStack>
 
             </HStack>
