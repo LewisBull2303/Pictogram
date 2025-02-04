@@ -27,7 +27,7 @@ const NavBar = () => {
     return (
         <Flex w='100vw' h='90px' bg='blue.600' justifyContent="center" alignItems='center'>
             <HStack w='90%' justifyContent='space-between' color='white'>
-                <Text fontSize='24px' fontWeight='bold'>Clonestagram</Text>
+                <Text fontSize='24px' fontWeight='bold'>Pictogram</Text>
                 <HStack gap='20px'>
                     <Text onClick={(route) => handleNavigation('search')}><IoSearch size='22px'/></Text>
                     <Text onClick={handleNavigateUser}><CgProfile size='22px'/></Text>
