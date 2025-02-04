@@ -232,7 +232,7 @@ def get_posts(request):
     try:
         my_user = Users.objects.get(username=request.user.username)
     except Users.DoesNotExist:
-        return Response({'error': 'User not found'}, status=404)
+        return Response({'error':'user does not exist'})
 
     posts = Post.objects.all().order_by('-created_at')
 
@@ -240,8 +240,7 @@ def get_posts(request):
     paginator.page_size = 10
 
     result_page = paginator.paginate_queryset(posts, request)
-
-    serializer = PostSerializer(posts, many=True)
+    serializer = PostSerializer(result_page, many=True)
 
     data = []
 
@@ -253,9 +252,9 @@ def get_posts(request):
         else:
             new_post = {**post, 'liked':False}
         data.append(new_post)
-        
 
     return paginator.get_paginated_response(data)
+
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
