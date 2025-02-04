@@ -34,7 +34,7 @@ const Home = () => {
     }
 
     return (
-        <Flex w='100%' justifyContent='center' pt='50px'>
+        <Flex w='100%' justifyContent='center' pt='50px' bg>
             <VStack alignItems='start' gap='20px' pb='50px'>
                 {
                     loading ?
