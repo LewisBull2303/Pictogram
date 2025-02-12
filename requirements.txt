@@ -7,3 +7,4 @@ sqlparse==0.5.3
 typing_extensions==4.12.2
 djangorestframework_simplejwt==5.4.0
 gunicorn==20.1.0
+whitenoise==6.4.0
