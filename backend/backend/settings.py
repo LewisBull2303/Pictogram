@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'cloudinary_storage',
+    'cloudinary',
     "rest_framework",
     "corsheaders",
     "rest_framework_simplejwt",
@@ -59,6 +61,7 @@ REST_FRAMEWORK = {
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     "django.contrib.sessions.middleware.SessionMiddleware",
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -86,7 +89,7 @@ ROOT_URLCONF = "backend.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, 'staticfiles', 'build')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -148,6 +151,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = "static/"
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+WHITENOISE_ROOT = BASE_DIR / 'staticfiles' / 'build'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
