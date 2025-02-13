@@ -28,7 +28,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'pictogram-project5-4fab6a1a47d8.herokuapp.com']
 
-CSRF_TRUSTED_ORIGINS = ['https://localhost:3000']
+CSRF_TRUSTED_ORIGINS = ['https://localhost:3000', 'pictogram-project5-4fab6a1a47d8.herokuapp.com']
 
 AUTH_USER_MODEL = 'base.Users'
 
