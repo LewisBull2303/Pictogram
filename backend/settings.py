@@ -76,7 +76,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "https://3000-lewisbull2303-instagram-spjqg3hzjk.app.codeanywhere.com",
     "https://8000-lewisbull2303-instagram-spjqg3hzjk.app.codeanywhere.com",
-    "http://127.0.0.1:8000"
+    "http://127.0.0.1:8000",
+    'pictogram-project5-4fab6a1a47d8.herokuapp.com',
 ]
 
 CORS_ALLOW_CREDENTIALS = True
