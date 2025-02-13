@@ -26,9 +26,9 @@ SECRET_KEY = "django-insecure-84#_z(!(u5japvrm%mm=#zc%fy!!ot5eqaf@hj!d)w@eu#6g43
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'https://pictogram-project5-4fab6a1a47d8.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1', 'https://pictogram-project5-4fab6a1a47d8.herokuapp.com/', 'pictogram-project5-4fab6a1a47d8.herokuapp.com']
 
-CSRF_TRUSTED_ORIGINS = ['https://localhost:3000', 'https://pictogram-project5-4fab6a1a47d8.herokuapp.com/']
+CSRF_TRUSTED_ORIGINS = ['https://localhost:3000', 'https://pictogram-project5-4fab6a1a47d8.herokuapp.com/', 'pictogram-project5-4fab6a1a47d8.herokuapp.com']
 
 AUTH_USER_MODEL = 'base.Users'
 
@@ -78,6 +78,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://8000-lewisbull2303-instagram-spjqg3hzjk.app.codeanywhere.com",
     "http://127.0.0.1:8000",
     'https://pictogram-project5-4fab6a1a47d8.herokuapp.com/',
+    'pictogram-project5-4fab6a1a47d8.herokuapp.com',
 ]
 
 CORS_ALLOW_CREDENTIALS = True
