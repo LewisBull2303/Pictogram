@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { SERVER_URL } from '../constants/constants.js'
+import { SERVER_URL } from '../constants/constants'
 
 const BASE_URL = SERVER_URL
 
