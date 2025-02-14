@@ -3,13 +3,6 @@ import { SERVER_URL } from '../constants/constants'
 
 const BASE_URL = SERVER_URL
 
-axios.defaults.baseURL = "/api";
-axios.defaults.headers.post["Content-Type"] = "multipart/form-data";
-axios.defaults.withCredentials = true;
-
-export const axiosReq = axios.create();
-export const axiosRes = axios.create();
-
 const api = axios.create({
     baseURL:BASE_URL,
     withCredentials:true
