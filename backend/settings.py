@@ -21,11 +21,9 @@ import cloudinary.api
 if os.path.exists('env.py'):
     import env
 
-cloudinary.config(
-    cloud_name=os.environ.get('CLOUDINARY_URL').split('@')[1],
-    api_key=os.environ.get('CLOUDINARY_URL').split(':')[1].split('@')[0],
-    api_secret=os.environ.get('CLOUDINARY_URL').split(':')[2],
-)
+CLOUDINARY_STORAGE = {
+    'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
+}
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
