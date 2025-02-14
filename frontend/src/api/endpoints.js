@@ -49,7 +49,7 @@ export const register = async (username, email, firstName, lastName, password) =
 }
 
 export const get_auth = async () => {
-    const response = await api.get(`/api/authenticated/`);
+    const response = await api.get(`/authenticated/`);
     return response.data
 }
 
