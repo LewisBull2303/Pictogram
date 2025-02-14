@@ -49,7 +49,6 @@ export const register = async (username, email, firstName, lastName, password) =
 }
 
 export const get_auth = async () => {
-    console.log("SERVER_URL:", SERVER_URL);
     const response = await api.get(`/api/authenticated/`);
     return response.data
 }
