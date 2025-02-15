@@ -30,7 +30,7 @@ api.interceptors.response.use(
 
 export const get_user_profile_data = async (username) => {
     const response = await api.get(`/api/user_data/${username}/`);
-    console.log(response)
+    console.log(api.get(`/api/user_data/${username}/`))
     return response.data
 }
 
