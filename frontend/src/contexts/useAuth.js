@@ -37,6 +37,7 @@ export const AuthProvider = ({children}) => {
                 }
                 localStorage.setItem('userData', JSON.stringify(userData))
                 navigate(`/${username}`)
+                console.log(navigate(`/${username}`))
             }
             else{
                 alert('invalid username or password')

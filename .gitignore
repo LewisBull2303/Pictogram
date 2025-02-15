@@ -128,7 +128,7 @@ celerybeat.pid
 
 # Environments
 .env
-env.py
+envpython3 manage.py collectstatic.py
 env/
 venv/
 .venv
