@@ -2,8 +2,10 @@ import { Text, VStack, Flex, Box, Heading, HStack, Image, Button, Spacer} from '
 import { useEffect, useState } from 'react';
 import { get_user_posts, get_user_profile_data, toggleFollow } from '../api/endpoints';
 import { SERVER_URL } from '../constants/constants';
+import { useNavigate } from 'react-router-dom';
 
 import Post from '../components/posts';
+
 
 const UserProfile = () => {
 
@@ -33,6 +35,12 @@ const UserProfile = () => {
 }
 
 const UserDetails = ({username}) => {
+
+    const nav = useNavigate();
+
+    const handleNavigationSettings = () => {
+        nav('/settings')
+    }
 
     const [loading, setLoading] = useState(true)
     const [bio, setBio] = useState('')
@@ -101,7 +109,7 @@ const UserDetails = ({username}) => {
                         :
                         
                             isMyProfile ?
-                                <Button w='100%'>Edit Profile</Button>
+                                <Button w='100%' onClick={handleNavigationSettings}>Edit Profile</Button>
                             :
                             <Button onClick={handleToggleFollow} colorScheme='blue' w='100%'>{following ? 'Unfollow' : 'Follow'}</Button>
 
