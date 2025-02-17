@@ -1,4 +1,4 @@
-import { VStack, Text, Image, HStack, Flex, Button, Box } from "@chakra-ui/react"
+import { VStack, Text, Image, HStack, Flex, Box } from "@chakra-ui/react"
 import { SERVER_URL } from "../constants/constants"
 
 import { FaHeart } from "react-icons/fa";
