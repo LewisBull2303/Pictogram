@@ -20,12 +20,6 @@ const NavBar = () => {
         nav(`/${route}`)
     }
 
-    const handleNavigateUser = () => {
-        const username = JSON.parse(localStorage.getItem('userData'))['username']
-        auth_login(username)
-        window.location.reload()
-    }
-
     return (
         <Flex w='100vw' h='90px' bg='blue.600' justifyContent="center" alignItems='center'>
             <HStack w='90%' justifyContent='space-between' color='white'>

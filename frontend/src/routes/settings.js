@@ -43,7 +43,7 @@ const Settings = () => {
                 <VStack w='100%' gap='10px' alignItems='start'>
                     <FormControl>
                         <FormLabel>Profile Picture</FormLabel>
-                        <input onChange={(e) => setProfileImage(e.target.files[0])} bg='white' type='file'/>
+                        <input onChange={(e) => setProfileImage(e.target.files[0])}  bg='white' type='file' accept='image/jpeg, image/png'/>
                     </FormControl>
                     <FormControl>
                         <FormLabel>Username</FormLabel>
