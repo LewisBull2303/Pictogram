@@ -34,12 +34,12 @@ export const get_user_profile_data = async (username) => {
 }
 
 const refresh_token = async () => {
-    const response = await api.post('token/refresh/');
+    const response = await api.post('/token/refresh/');
     return response.data
 }
 
 export const login = async (username, password) => {
-    const response = await api.post('token/', {username, password});
+    const response = await api.post('/token/', {username, password});
     return response.data
 }
 
