@@ -34,7 +34,7 @@ const NavBar = () => {
                 <Text fontSize='24px' fontWeight='bold'>Pictogram</Text>
                 <HStack gap='20px'>
                     <Text onClick={(route) => handleNavigation('search')}><IoSearch size='22px'/></Text>
-                    <Text onClick={(route) => handleNavigation(`${auth_login(username)}`)}><CgProfile size='22px'/></Text>
+                    <Text onClick={(route) => handleNavigation(`${username}`)}><CgProfile size='22px'/></Text>
                     <Text onClick={(route) => handleNavigation('create/post')}><IoAddCircleOutline size='24px' /></Text>
                     <Text onClick={(route) => handleNavigation('')}><IoHomeOutline size='22px'/></Text>
                     <Text onClick={(route) => handleNavigation('register')}><FiUserPlus size='20px'/></Text>
