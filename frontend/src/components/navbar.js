@@ -11,7 +11,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { useAuth } from '../contexts/useAuth'
 
 const NavBar = () => {
-    const username = JSON.parse(localStorage.getItem('userData'))['username'];
+    const username = JSON.parse(localStorage.getItem('userData'))?.username;
     const { auth_login } = useAuth();
     const nav = useNavigate();
 
