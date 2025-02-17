@@ -9,10 +9,11 @@ import { MdOutlineLogin } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
 import { IoSettingsOutline } from "react-icons/io5";
 import { useAuth } from '../contexts/useAuth'
+import { SERVER_URL } from "../constants/constants";
 
 
 const NavBar = () => {
-    console.log(localStorage.getItem('userData'))
+    console.log(JSON.parse((SERVER_URL)('userData')['username']))
     const username = JSON.parse(localStorage.getItem('userData'))['username']
     const { auth_login } = useAuth();
     const nav = useNavigate();
