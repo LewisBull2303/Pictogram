@@ -13,7 +13,7 @@ import { SERVER_URL } from "../constants/constants";
 
 
 const NavBar = () => {
-    console.log(JSON.parse((SERVER_URL)('userData')['username']))
+    console.log(JSON.parse(`${SERVER_URL}${'userData'}`)['username'])
     const username = JSON.parse(localStorage.getItem('userData'))['username']
     const { auth_login } = useAuth();
     const nav = useNavigate();
