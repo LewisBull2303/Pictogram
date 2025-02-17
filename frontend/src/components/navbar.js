@@ -12,6 +12,7 @@ import { useAuth } from '../contexts/useAuth'
 
 
 const NavBar = () => {
+    console.log(localStorage.getItem('userData'))
     const username = JSON.parse(localStorage.getItem('userData'))['username']
     const { auth_login } = useAuth();
     const nav = useNavigate();
