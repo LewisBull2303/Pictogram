@@ -89,7 +89,7 @@ This website allows users to create accounts, sign in, edit their profiles to th
  - 
  - 
  - 
-![image](https://github.com/user-attachments/assets/75a81b11-7be3-4bc4-8bb3-1e088d32e348)
+
 
 
 ## Bugs
