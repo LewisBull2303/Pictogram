@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/d8dfb9fb-f72a-4440-92a4-2e71f708d76f)# Lewis Bull - Pictogram
+# Lewis Bull - Pictogram
 
 ## Brief:
 
