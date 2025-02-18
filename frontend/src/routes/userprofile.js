@@ -89,7 +89,7 @@ const UserDetails = ({username}) => {
             <Heading>@{username}</Heading>
             <HStack gap='20px'>
                 <Box boxSize='150px' border='2px solid' borderColor='grey.700' bg='white' borderRadius='full' overflow='hidden'> 
-                <Image src={loading ? null : `${SERVER_URL}${profileImage}`}boxSize='100%' objectFit='cover'/>
+                <Image src={loading ? null : `${profileImage}`}boxSize='100%' objectFit='cover'/>
 
                 </Box>
                 <VStack gap='20px'>

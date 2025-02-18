@@ -1,4 +1,4 @@
-import { VStack, Flex, Heading, FormControl, FormLabel, Input, Button, Image} from "@chakra-ui/react"
+import { VStack, Flex, Heading, FormControl, FormLabel, Button, Image} from "@chakra-ui/react"
 import { create_post } from '../api/endpoints'
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
