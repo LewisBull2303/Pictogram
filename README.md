@@ -75,6 +75,13 @@ This website allows users to create accounts, sign in, edit their profiles to th
 -   Under the button there is text which allows the user to go straight to the register page if they dont already have an account
 ![image](https://github.com/user-attachments/assets/c470d8ee-05df-46ec-b3dc-9e568dc03514)
 
+- ###  Settings Page
+-   The last and final icon in the navbar is the settings icon, which allows the user to change their profile
+-   The user will be able to edit their username, profile picture, email, first and last name as well as their bio
+-   There is a button to save changes which then will save their updated profile to the database
+-   Underneath the save changes button there is a button to logout of the users account, which will take them back to the login page
+![image](https://github.com/user-attachments/assets/a8ab2ebd-1111-45ef-8be5-828a06bf4954)
+
 
 ## Testing
 
