@@ -68,6 +68,12 @@ This website allows users to create accounts, sign in, edit their profiles to th
 -   Once the user has completed registration it takes them to the login page
 ![image](https://github.com/user-attachments/assets/75a81b11-7be3-4bc4-8bb3-1e088d32e348)
   
+- ###  Login User Page
+-   The next icon in the navbar is the Login user icon, which allows the user to login to their account, After the register user page this will automatically load
+-   The user will have to endter their username and password that they signed up with otherwise they cant login to their account
+-   There is a modern button which allows the player to login to their account and this will then take them to the user profile page
+-   Under the button there is text which allows the user to go straight to the register page if they dont already have an account
+![image](https://github.com/user-attachments/assets/c470d8ee-05df-46ec-b3dc-9e568dc03514)
 
 
 ## Testing
