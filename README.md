@@ -80,6 +80,7 @@ This website allows users to create accounts, sign in, edit their profiles to th
 -   The user will be able to edit their username, profile picture, email, first and last name as well as their bio
 -   There is a button to save changes which then will save their updated profile to the database
 -   Underneath the save changes button there is a button to logout of the users account, which will take them back to the login page
+-   The settings page can also be accessed by clicking on the edit profile button on the users profile
 ![image](https://github.com/user-attachments/assets/a8ab2ebd-1111-45ef-8be5-828a06bf4954)
 
 
