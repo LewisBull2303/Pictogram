@@ -15,6 +15,8 @@ This website allows users to create accounts, sign in, edit their profiles to th
   - The navbar is in a modern blue and white colour scheme which stands from the rest of the website and adds another layer of colour to the website
   - The navigation is in a modern font which was chosen especially to appeal to the most people and remain modern and plesent to look at.
   - The navigation bar has no text after the icons to make the navigation bar look clean and consise.
+  ![image](https://github.com/user-attachments/assets/d8730292-2214-4c4f-9595-b0087169b500)
+
 
 - ### Home Page
 -   The home page is where all of the posts from all users are. They are in one line and load 10 pictures at a time
