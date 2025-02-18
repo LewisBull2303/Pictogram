@@ -1,4 +1,4 @@
-# Lewis Bull - Pictogram
+![image](https://github.com/user-attachments/assets/d8dfb9fb-f72a-4440-92a4-2e71f708d76f)# Lewis Bull - Pictogram
 
 ## Brief:
 
@@ -24,14 +24,6 @@ This website allows users to create accounts, sign in, edit their profiles to th
   - The posts are both on the home page and the users who posted its profile
 ![image](https://github.com/user-attachments/assets/254081ce-57d4-4823-9363-ecde7946b605)
 
-
-- ### Home Page
--   The home page is where all of the posts from all users are. They are in one line and load 10 pictures at a time. All of the pictures are designed to be small and easy to see
--   If there is more than 10 posts on the home page a modern looking button will apear called load more, which will allow the user to load 10 more posts which limits the stress the posts have on the server
--   There is a clear and accurate header at the top of the page, which is centered in the middle.
-![image](https://github.com/user-attachments/assets/aa5cd976-2841-49fb-8925-fec49da68819)
-
-
 - ### Search Page
 -   The first icon is the search page icon, it allows for users to search for any other users that they want
 -   There is a text box for the search query which is where the user can input the username of the person that they want to find
@@ -52,18 +44,29 @@ This website allows users to create accounts, sign in, edit their profiles to th
 ![image](https://github.com/user-attachments/assets/432832a3-5b14-4444-b2e3-036947915578)
 
 
-- ### Projects Section
--   
--   
--   
--   
-  
+- ### Create Posts page
+-   The next section along in the navigation bar is the create posts page
+-   This page has a large modern header and a small bit of text instructing the user
+-   Under this there is an input file area where the user can upload their image for their post
+-   When the user uploads and image, a example image will apear under the upload area for the user to see how the post will look after they create the post
+-   Under the example of what the post will look like there is the create post button which will make the post and then take the user back to the home page to see their new post
+![image](https://github.com/user-attachments/assets/c3f604a9-6616-426f-b4a4-28577d619336)
+![image](https://github.com/user-attachments/assets/b75151c5-12c1-4281-aa4b-352eb77ce36e)
+
+- ### Home Page
+-   The next icon in the navbar, takes you to the home page is where all of the posts from all users are. They are in one line and load 10 pictures at a time. All of the pictures are designed to be small and easy to see
+-   If there is more than 10 posts on the home page a modern looking button will apear called load more, which will allow the user to load 10 more posts which limits the stress the posts have on the server
+-   There is a clear and accurate header at the top of the page, which is centered in the middle.
+![image](https://github.com/user-attachments/assets/aa5cd976-2841-49fb-8925-fec49da68819)
 
 
-- ### Contact Section
--   
--   
--   
+- ###  Register User Page
+-   The next icon in the navbar is the regitser user icon, which allows the user to create a account
+-   It has multiple text inputs where the user has to input their desired username, their first and last name, and then their password and confirm password,
+-   After this there is a regsiter button which completes the process and saves the user to the database
+-   Under the button there is text which allows the user to go straight to the login page if they already have an account
+-   Once the user has completed registration it takes them to the login page
+![image](https://github.com/user-attachments/assets/75a81b11-7be3-4bc4-8bb3-1e088d32e348)
   
 
 
