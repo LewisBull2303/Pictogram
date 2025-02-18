@@ -18,9 +18,18 @@ This website allows users to create accounts, sign in, edit their profiles to th
   ![image](https://github.com/user-attachments/assets/d8730292-2214-4c4f-9595-b0087169b500)
 
 
+- ### Posts
+  - The main function of the website is the posts. It has an image that is centerd to the middle of the post object
+  - It has a like button where users can like posts and give approval and it has the date in the bottom right of the post
+  - The posts are both on the home page and the users who posted its profile
+![image](https://github.com/user-attachments/assets/254081ce-57d4-4823-9363-ecde7946b605)
+
+
 - ### Home Page
--   The home page is where all of the posts from all users are. They are in one line and load 10 pictures at a time
--   
+-   The home page is where all of the posts from all users are. They are in one line and load 10 pictures at a time. All of the pictures are designed to be small and easy to see
+-   If there is more than 10 posts on the home page a modern looking button will apear called load more, which will allow the user to load 10 more posts which limits the stress the posts have on the server
+-   There is a clear and accurate header at the top of the page, which is centerd in the middle.
+-      
 -   
 
 
