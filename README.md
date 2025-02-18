@@ -6,6 +6,8 @@ In the modern day, dont you think that there is too much of a focus on what othe
 
 This website allows users to create accounts, sign in, edit their profiles to their liking, create new posts, like other users posts, and to search for their family and friends to follow them.
 
+* Please note that https://ui.dev/amiresponsive?url=https://pictogram-project5-4fab6a1a47d8.herokuapp.com/New_User does not work with my project, this is an error with their website and not my project or deployment
+
 ## Features
 
 - ### Navigation
