@@ -361,9 +361,20 @@ All Functions, such as navigation, buttons and interactive objects worked perfec
 |Profile picture not updated when the bio doesnt get changed|Updated the bio variable so it can be blank with lets the requests get through|
 
 ## Config
-- Go to the [Pictogram live repository]()
 
-The Live link to this repository can be found here -
+**Forking the Github Repository**
+- Go to the [Pictogram live repository](https://github.com/LewisBull2303/Pictogram)
+- Click on the Fork button in the top right corner
+- You will then have a copy of the repository in your own GitHub Account
+
+**Making a Local Clone**
+- Go to the [Pictogram GitHub repository](https://github.com/LewisBull2303/Pictogram).
+- Locate the Code button above the list of files and click it.
+- Highlight the HTTPS button to clone with HTTPS and copy the link.
+- Open the command-line interface on your computer.
+- Change the current working directory to the one where you want the cloned directory.
+- Type git clone and paste the URL from the clipboard
+
 
 
 
