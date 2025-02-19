@@ -1,5 +1,27 @@
 # Lewis Bull - Pictogram
 
+## User Stories
+
+The back-end section of the Pictogram project focuses on its administration side and covers one user story:
+
+As an admin, I want to be able to create, edit, and delete users, posts and likes, so that I can have control over the content of the application and remove any inappropriate content.
+
+Users Model
+The Profile model contains the following fields: username, bio, profile image, Followers.
+One-to-one relation between the username  field and the user field in the posts model
+Default profile image is used if no image is uploaded.
+The bio is unable to be empty to avoid errors
+
+Post Model
+The Post model contains the following fields: user, post_image, created_at, likes
+Foreign key relation with the Users
+
+
+## Database: 
+The following models were created to represent the database model structure of the application:
+![image](https://github.com/user-attachments/assets/67fa2742-f464-4dd3-8842-800e84c97969)
+
+
 ## Brief:
 
 In the modern day, dont you think that there is too much of a focus on what other people think? When you see a new post on social media, one of the first things most people do, is to check the comments. Pictogram aims to solve this. Pictogram is a social media that aims to bring social media back to its roots, no comments, just pictures and likes taking out the the ability for people to be negative.
