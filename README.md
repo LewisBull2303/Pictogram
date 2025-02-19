@@ -180,25 +180,26 @@ User Profile Page:
 
 **Mobile View**
 Home Page:
-![image](https://github.com/user-attachments/assets/34854579-bff8-4d9f-bb78-f489a2755d14)
+![image](https://github.com/user-attachments/assets/114752d8-4ccb-4d19-a546-6f68381eb779)
 
 Search Page:
-![image](https://github.com/user-attachments/assets/ff920555-2f09-42df-a429-d77c3994dc4b)
+![image](https://github.com/user-attachments/assets/6d65fb2a-50b3-46e2-8ea4-bce1378a2e47)
 
 Login Page:
-![image](https://github.com/user-attachments/assets/faef3bc5-1f18-454a-8269-f8399ac3d6ef)
+![image](https://github.com/user-attachments/assets/69b6cac3-aec3-401d-8e04-36bfe6724765)
 
 Register Page:
-![image](https://github.com/user-attachments/assets/65971b7b-dfe4-4ddb-9b08-076b54393384)
+![image](https://github.com/user-attachments/assets/becd92a7-6311-4dac-b51c-584dc9096c23)
 
 Create Post Page:
-![image](https://github.com/user-attachments/assets/6ab82841-ea89-4b46-9e0e-217e38be2555)
+![image](https://github.com/user-attachments/assets/63c044cb-48da-4fda-b71d-b3b953d799e7)
 
 Settings Page:
-![image](https://github.com/user-attachments/assets/8c2551a1-0234-4e5b-a81a-61ef0689f638)
+![image](https://github.com/user-attachments/assets/6a4ff252-aca2-41e2-9584-4d1dbf3139b4)
 
 User Profile Page:
-![image](https://github.com/user-attachments/assets/59afbd77-b18c-4d5a-90b1-b2ed1db0545c)
+![image](https://github.com/user-attachments/assets/b0b72c4e-29f6-4ab2-bb92-bc318f44c19c)
+
 
 
 **Tablet View**
