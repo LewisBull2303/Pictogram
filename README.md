@@ -248,21 +248,36 @@ Pictogram’s back-end is built using the Django REST Framework (DRF), which eff
 ![image](https://github.com/user-attachments/assets/a8ab2ebd-1111-45ef-8be5-828a06bf4954)
 
 
+## Future Features / Improvements
+
+Whilst it is a great program, Pictogram has many area where it could be improved, these are a few that could make Pictogram a household name:
+
+- Linking to other Social media - Allowing users to link their Pictogram accounts to their other social medias will take Pictogram to the next level
+- Forgot Password Button - Adding a Button that allows users to get an email if they forgot their password to reset it
+- Messaging system - Adding a messaging system to Pictogram would allow it to truly flourish as a social media
+- Filters - Allowing users to filter the post the posts they see by the people they follow or other posts they like
+- Email Authntication - Making so that to sign up, users need to confirm an email address will add another level of security to Pictogram
+
+## Validation
+
+
 ## Testing
 
- - 
- - 
- - 
+**Performing Tests on Various Devices**
 
+Pictogram was tested using Google Chrome Developer Tools Toggle Device Toolbar to simulate various devices. The website was successfully tested on the following devices:
 
+- Iphone 13
+- Samsung Galaxy Tablet A8
+- Windows 10 Computer
 
-## Bugs
+Tesing was also done on the following browsers:
+- Google Chrome
+- Microsoft Edge
+- Opera GX
+- Firefox
 
-- 
-- 
-- 
-
-## Validator Testing
+All Functions, such as navigation, buttons and interactive objects worked perfectly across all tests
 
 - Html
 -   
