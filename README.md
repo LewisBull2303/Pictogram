@@ -70,19 +70,36 @@ The manual testing of the user stories focused on ensuring that all functions an
 |Followers|Follow and unfollow users| Users can follow and unfollow other users, Admins can regulate followers if needed| Works as expected|
 |Authentications|Users need to be logged in to edit and create| Users need to be logged in as a registered account to be able to create, edit and delete anything on the website including but not limited to, posts and the users profile| Works as expected|
 
-## Brief:
-
-In the modern day, dont you think that there is too much of a focus on what other people think? When you see a new post on social media, one of the first things most people do, is to check the comments. Pictogram aims to solve this. Pictogram is a social media that aims to bring social media back to its roots, no comments, just pictures and likes taking out the the ability for people to be negative.
-
-This website allows users to create accounts, sign in, edit their profiles to their liking, create new posts, like other users posts, and to search for their family and friends to follow them.
-
-* Please note that https://ui.dev/amiresponsive?url=https://pictogram-project5-4fab6a1a47d8.herokuapp.com/ does not work with my project, this is an error with their website and not my project or deployment
-
 ## Summary
 
 The testing phase confirmed that the Pictogram website meets all functional requirements and performs reliably across different scenarios. Manual tests have validated the robustness of the backend API, ensuring a secure and seamless user experience.
 
-##Frontend
+## Frontend:
+
+## Project Goals:
+
+In the modern day, dont you think that there is too much of a focus on what other people think? When you see a new post on social media, one of the first things most people do, is to check the comments. Pictogram aims to solve this. Pictogram is a social media that aims to bring social media back to its roots, no comments, just pictures and likes taking out the the ability for people to be negative.
+
+This project aims to
+ 1. Offer a smooth platform for users to:
+    - Share their own pictures and photos without negativity
+    - Interact with others by liking other users' posts and following other users
+ 2. Improve user engagement by providing:
+    - The capability to create and modify user profiles
+    - Instant feedback when liking or following a user
+ 3. Deliver an exceptional user experience with:
+    - Creative navigation and adaptive design across all devices
+    - Features like Infinite Scrolling on the homepage and user search
+ 4. Enable users to customize their experience by:
+    - Viewing and altering their own profiles and posts
+    - Tailoring their feed with likes and follows
+ 5. Ensure high accessibility and dependability through:
+    - Error management such as personalized error messages
+    - Secure authentication and user data handling
+      
+* Please note that https://ui.dev/amiresponsive?url=https://pictogram-project5-4fab6a1a47d8.herokuapp.com/ does not work with my project, this is an error with their website and not my project or deployment
+
+
 
 ## Features
 
