@@ -260,8 +260,24 @@ Whilst it is a great program, Pictogram has many area where it could be improved
 
 ## Validation
 
-All Code passed the Eslint Validator, except Eslint did not understand some of the additonal libraries I was importing and then flagged various things up as undefined when in the code, They made perfect sense and ran correctly. See below al screenshots
+**CSS Validation**
+The W3C Jigsaw CSS Validation Service confirmed all CSS modules are error-free.
 
+App.css:
+![image](https://github.com/user-attachments/assets/af4290a5-805b-49c1-b133-638d9331df6e)
+
+Index.css:
+![image](https://github.com/user-attachments/assets/fa86e4bc-cf7f-4443-9bc4-08bb00d5b825)
+
+
+**HTML Validation**
+The W3C Markup Validation Service confirmed the website’s HTML is error-free and fully compliant.
+![image](https://github.com/user-attachments/assets/989d3128-2d85-4de0-8e2f-494f0990d734)
+
+
+**JSX Validation:**
+
+All Code passed the Eslint Validator, except Eslint did not understand some of the additonal libraries I was importing and then flagged various things up as undefined when in the code, They made perfect sense and ran correctly. See below al screenshots
 Create_Post.js:
 ![image](https://github.com/user-attachments/assets/7b9c6b2d-6e6e-4301-8f52-96b8d5da34ce)
 ![image](https://github.com/user-attachments/assets/133e40ba-243e-4164-92f6-f74d1c1cde9c)
