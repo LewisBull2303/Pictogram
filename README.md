@@ -136,6 +136,42 @@ The colour scheme for Pictogram was designed to convey the a warm, welcoming and
 ![image](https://github.com/user-attachments/assets/3adcd016-7ac8-465d-9d84-78627752197f)
 
 
+## Technologies Used
+
+**Languages**
+ - HTML
+ - CSS
+ - JavaScript(React)
+
+**Libraries, Framewords and Dependencies**
+- React - Core library for building the user interface of Pictogram.
+- React DOM - Provides DOM methods for React.
+- React Router DOM - Enables routing to navigate between pages without reloading.
+- Axios - Used to make requests to the backend APIs
+- React Icons - Provides plenty of custom icons to make the project look better and stand out
+- @chakra-ui/react - provides a comprenhsive collection of objects to make webpages in react
+
+**Development Tools**
+- React Scripts - Was the core for sunning script, building and running the app
+
+**Tools and Programs**
+- Am I Responsive - Shows how Pictogram looks on differnt devices and provides a preview image which was used above
+- Cloudinary - Managed and served high-quality images and media assets efficiently.
+- Git - Used for version control, which helps with coding error-free.
+- GitHub - Hosted the Pictogram repository, Allowing me to showcase all my code and the process I took to make this project
+
+## Backend API - Pictogram API
+
+Pictogram’s back-end is built using the Django REST Framework (DRF), which efficiently handles all data and operations. It ensures a smooth user experience by managing user authentication, posts, comments, and profiles. The API serves as the core structure, supporting all essential features of the app.
+
+**Key Features of the API**
+- User Authentication: Secure endpoints are provided for logging in, registering, and managing user sessions.
+- Post Management: Users can create, update, delete, and retrieve posts with full CRUD functionality.
+- Like Functionality: Users can like and unlike on posts
+- Follow Functionality: Users can follow and unfollow other user accounts
+- Profile Control: Users have the ability to view and edit their profiles and manage passwords.
+- Performance Optimizations: Efficient serializers and query optimizations ensure fast data responses.
+
 ## Features
 
 - ### Navigation Bar
