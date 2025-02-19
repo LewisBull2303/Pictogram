@@ -1,5 +1,10 @@
 # Lewis Bull - Pictogram
 
+**Developer - Lewis Bull**
+
+This repository contains the API set up using Django REST Framework for the FitShare front-end application
+[Live Website here](https://pictogram-project5-4fab6a1a47d8.herokuapp.com/)
+
 ## User Stories
 
 The back-end section of the Pictogram project focuses on its administration side and covers one user story:
