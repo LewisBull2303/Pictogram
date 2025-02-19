@@ -260,12 +260,20 @@ Whilst it is a great program, Pictogram has many area where it could be improved
 
 ## Validation
 
+All Code passed the Eslint Validator, except Eslint did not understand some of the additonal libraries I was importing and then flagged various things up as undefined when in the code, They made perfect sense and ran correctly. See below al screenshots
+
+[Create_Post.js]![image](https://github.com/user-attachments/assets/96fdb41a-2cee-438f-b206-09d4ecac8b89)
+
+
 
 ## Testing
 
 **Performing Tests on Various Devices**
 
 Pictogram was tested using Google Chrome Developer Tools Toggle Device Toolbar to simulate various devices. The website was successfully tested on the following devices:
+
+![image](https://github.com/user-attachments/assets/b94bbfe4-9098-4f45-825a-ec7bbef1febf)
+
 
 - Iphone 13
 - Samsung Galaxy Tablet A8
