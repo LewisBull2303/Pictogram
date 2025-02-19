@@ -348,6 +348,30 @@ useAuth.js
 ![image](https://github.com/user-attachments/assets/7c4c8efb-8f08-40fc-acce-f29c91f302f7)
 ![image](https://github.com/user-attachments/assets/d1816753-4aba-48e3-9203-018676f43f86)
 
+**Lighthouse Validation**
+I used the lighthouse validator to confirm that all of my elements and pages are accessible and easy to use
+
+Login Page
+![image](https://github.com/user-attachments/assets/e678c326-c9d4-4739-84f2-664cc8877ddb)
+
+Home Page:
+![image](https://github.com/user-attachments/assets/e6d066da-0773-4864-8a5f-0c6e9eabc99e)
+
+Profile Page:
+![image](https://github.com/user-attachments/assets/f46561d9-f207-4aed-90d8-b32319f3da8d)
+
+Search Page:
+![image](https://github.com/user-attachments/assets/350bf6d5-9a89-4811-af42-edaad5828f1e)
+
+Register Page:
+![image](https://github.com/user-attachments/assets/086c5963-30ca-43f4-80f3-d4fb375914be)
+
+Create Post Page:
+![image](https://github.com/user-attachments/assets/100fad0a-8403-4ee4-931d-1dae21c3356a)
+
+Settings Page:
+![image](https://github.com/user-attachments/assets/83d1a26a-75ba-4e51-bf39-f7f4b952f6b7)
+
 
 ## Testing
 
