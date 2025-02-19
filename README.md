@@ -262,8 +262,75 @@ Whilst it is a great program, Pictogram has many area where it could be improved
 
 All Code passed the Eslint Validator, except Eslint did not understand some of the additonal libraries I was importing and then flagged various things up as undefined when in the code, They made perfect sense and ran correctly. See below al screenshots
 
-[Create_Post.js](https://github.com/user-attachments/assets/96fdb41a-2cee-438f-b206-09d4ecac8b89)
+Create_Post.js:
+![image](https://github.com/user-attachments/assets/7b9c6b2d-6e6e-4301-8f52-96b8d5da34ce)
+![image](https://github.com/user-attachments/assets/133e40ba-243e-4164-92f6-f74d1c1cde9c)
+![image](https://github.com/user-attachments/assets/e6e2dae2-3a36-438a-a2e0-64876b13295c)
 
+Home.js:
+![image](https://github.com/user-attachments/assets/63c758df-7c54-4fde-9876-5515f6311d41)
+![image](https://github.com/user-attachments/assets/70481a33-746f-4e70-97f2-201ffd2957fe)
+
+Login.js:
+No Errors on Console
+![image](https://github.com/user-attachments/assets/f4798915-7d60-44c9-bb00-06c0d6aa2fd9)
+![image](https://github.com/user-attachments/assets/6189401d-e67a-4dcf-8122-a01072c328ee)
+![image](https://github.com/user-attachments/assets/ec2a8696-7ae8-4c3e-a018-304bcfb4e1c9)
+
+Register.js:
+![image](https://github.com/user-attachments/assets/0a9654db-9cdf-4c0e-adfa-6048cf91561a)
+![image](https://github.com/user-attachments/assets/18746afd-e042-4563-8178-ac754fd5e1f7)
+![image](https://github.com/user-attachments/assets/337b00e1-41a2-4d8b-a4e3-e2dfac8d478b)
+
+Search.js:
+![image](https://github.com/user-attachments/assets/928ea64e-ed27-4567-bc31-02af66e5228f)
+![image](https://github.com/user-attachments/assets/7dc3867b-eb2b-4be9-9a17-1430278b3517)
+![image](https://github.com/user-attachments/assets/f8efbac7-2237-43e1-8a2f-052e1a57f7a8)
+
+Settings.js:
+![image](https://github.com/user-attachments/assets/083d5e81-569d-47ea-a485-ac49421b99a0)
+![image](https://github.com/user-attachments/assets/45629a94-7cc3-46af-bab2-eaf77fd87dfc)
+![image](https://github.com/user-attachments/assets/ba693dc3-0220-4423-b59d-27eddf74d839)
+![image](https://github.com/user-attachments/assets/55e7b808-abd8-4a7e-aca0-78cd17f1f9c5)
+
+userprofile.js:
+![image](https://github.com/user-attachments/assets/7d4da2c1-d545-4ed1-9091-dc5423116039)
+![image](https://github.com/user-attachments/assets/44ba47cf-28b4-402e-88d6-61f253ffde8a)
+![image](https://github.com/user-attachments/assets/357fd7a0-2a77-434d-bad3-b4484ca604fc)
+![image](https://github.com/user-attachments/assets/d1894dfa-c868-4188-ae9f-fc57818cd25d)
+![image](https://github.com/user-attachments/assets/557bb72a-77d9-4065-a8ae-97ec9de5e862)
+
+Endpoints.js:
+![image](https://github.com/user-attachments/assets/f8f4652e-abf9-4642-859c-06abb74ebc9e)
+![image](https://github.com/user-attachments/assets/8d5b94e3-69f8-4978-98f0-d81fa34ffb93)
+![image](https://github.com/user-attachments/assets/d1dfe930-44fc-4680-a377-e666ac4fd712)
+![image](https://github.com/user-attachments/assets/574c0ff9-e1d8-4620-9347-c0ee3d02b6a4)
+
+Layout.js:
+![image](https://github.com/user-attachments/assets/6d5c186b-deb0-4b89-8163-739e00a307f7)
+![image](https://github.com/user-attachments/assets/78c4fd54-9e73-4eb6-80d4-20dcccb67f2a)
+
+Navbar.js:
+![image](https://github.com/user-attachments/assets/2f5b4b0b-9c21-4742-821a-29313afab8c6)
+![image](https://github.com/user-attachments/assets/3f7b8831-e6f5-4253-acdd-d1c8e347f577)
+
+Posts.js:
+![image](https://github.com/user-attachments/assets/fb5581b5-906f-40a5-82c1-62b886226a56)
+![image](https://github.com/user-attachments/assets/b6605a9a-7279-472a-b168-8d81f40dcf07)
+![image](https://github.com/user-attachments/assets/f141a2df-4b77-40c8-9695-6b174d9cea7f)
+
+Private_Route.js:
+![image](https://github.com/user-attachments/assets/e102393e-f30e-443f-a54c-ae08e07f424a)
+![image](https://github.com/user-attachments/assets/636f6cbf-30d0-4fc4-a402-4e5cff050cb8)
+
+Constants.js:
+No errors in the console:
+![image](https://github.com/user-attachments/assets/2da8ab59-3b87-400a-8e4c-e3a3f48ec170)
+![image](https://github.com/user-attachments/assets/bd6f2375-4f4b-4565-9065-9199cd796c49)
+
+useAuth.js
+![image](https://github.com/user-attachments/assets/7c4c8efb-8f08-40fc-acce-f29c91f302f7)
+![image](https://github.com/user-attachments/assets/d1816753-4aba-48e3-9203-018676f43f86)
 
 
 ## Testing
@@ -284,23 +351,17 @@ Tesing was also done on the following browsers:
 
 All Functions, such as navigation, buttons and interactive objects worked perfectly across all tests
 
-- Html
--   
 
+## Bugs
 
-- CSS
--   
+|Bug|Fix|
+|---|---|
+|Cloudingary was not receiving images| Updated my files to get rid of the server_url in the src and set up the cloudinary correctly in configs
+|Profile button in the nav leading to a 404 page| Updated the navigate as it was not getting the username correctly|
+|Profile picture not updated when the bio doesnt get changed|Updated the bio variable so it can be blank with lets the requests get through|
 
-
-- Accessibility
--   
-
-
-## Deployment
-- 
--   
--   
--   
+## Config
+- Go to the [Pictogram live repository]()
 
 The Live link to this repository can be found here -
 
