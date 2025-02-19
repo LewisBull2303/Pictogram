@@ -51,6 +51,8 @@ const UserDetails = ({username}) => {
     const [isMyProfile, setIsMyProfile] = useState(false)
     const [following, setFollowing] = useState(false)
 
+    const profile_image_url = profileImage
+
     const handleToggleFollow = async () => {
         const data = await toggleFollow(username);
         if (data.now_following) {
@@ -89,7 +91,7 @@ const UserDetails = ({username}) => {
             <Heading>@{username}</Heading>
             <HStack gap='20px'>
                 <Box boxSize='150px' border='2px solid' borderColor='grey.700' bg='white' borderRadius='full' overflow='hidden'> 
-                <Image src={loading ? null : `${SERVER_URL}${profileImage}`}boxSize='100%' objectFit='cover'/>
+                <Image src={profile_image_url}boxSize='100%' objectFit='cover'/>
 
                 </Box>
                 <VStack gap='20px'>

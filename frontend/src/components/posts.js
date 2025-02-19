@@ -13,6 +13,8 @@ const Post = ({id, username, post_image, formatted_date, liked, like_count}) => 
     const [clientLiked, setClientLiked] = useState(liked)
     const [clientLikeCount, setClientLikeCount] = useState(like_count)
 
+    const post_image_url = post_image
+
     const handleToggleLike = async () => {
         const data = await toggleLike(id)
         if(data.now_liked){
@@ -32,7 +34,7 @@ const Post = ({id, username, post_image, formatted_date, liked, like_count}) => 
                 <Text>@{username}</Text>
             </HStack>
             <Flex flex='6' w='100%' h='100%' justifyContent='center' alignItems='center'>
-                <Image minWidth='225px'maxWidth='300px' minHeight='225px' maxHeight='225px' src={post_image ? `${SERVER_URL}${post_image}` : null}></Image>
+                <Image minWidth='225px'maxWidth='300px' minHeight='225px' maxHeight='225px' src={post_image_url}></Image>
             </Flex>
             <Flex flex='2' w='100%' justifyContent='center' alignItems='center' borderTop='1px solid' bg='gray.50' borderColor='gray.300' borderRadius='0 0 8px 8px' maxHeight='40px'>
                 <HStack w='90%' justifyContent='space-between'>
