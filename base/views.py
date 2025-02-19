@@ -283,19 +283,6 @@ def update_user_details(request):
     
     return Response({**serializer.errors, "success": False})
 
-    if 'profile_image' in request.FILES:
-        user.profile_image = request.FILES['profile_image']
-        user.save()
-
-    return Response({
-        "success": True,
-        "profile_image": user.profile_image.url,
-        "bio": user.bio,
-        "username": user.username,
-        "first_name": user.first_name,
-        "last_name": user.last_name
-    })
-
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def logout(request):

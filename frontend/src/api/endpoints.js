@@ -101,11 +101,7 @@ export const logout = async () => {
     return response.data
 }
 
-export const update_user = async (formData) => {
-    const response = await api.patch('/update_user/', formData, {
-        headers: {
-            'Content-Type': 'multipart/form-data',
-        }
-    });
-    return response.data;
-};
+export const update_user = async (values) => {
+    const response = await api.patch('/update_user/', values, { headers: {'Content-Type': 'multipart/form-data'}})
+    return response.data
+}
