@@ -14,44 +14,53 @@ from pathlib import Path
 import os
 import dj_database_url
 
+# Check if 'env.py' file exists and import it
 if os.path.exists('env.py'):
     import env
 
+# Cloudinary configuration for media storage
 CLOUDINARY_STORAGE = {
     'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
 }
 
+# Define media URL for file serving
 MEDIA_URL = 'media/'
 
+# Use Cloudinary for default file storage
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticCloudinaryStorage'
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+# Define the base directory for the project
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
+# Secret key for production (keep it secret)
 SECRET_KEY = os.environ['SECRET_KEY']
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# Debugging setting - should be False in production
 DEBUG = False
+
+# Security setting for iframe embedding
 X_FRAME_OPTIONS = 'ALLOW-FROM https://ui.dev/amiresponsive'
 
+# List of allowed hosts (IP addresses, domains)
 ALLOWED_HOSTS = ['127.0.0.1', 'https://pictogram-project5-4fab6a1a47d8.herokuapp.com/','pictogram-project5-4fab6a1a47d8.herokuapp.com', 'localhost']
 
+# Trusted origins for CSRF protection
 CSRF_TRUSTED_ORIGINS = ['https://localhost:3000', 'https://pictogram-project5-4fab6a1a47d8.herokuapp.com/','http://pictogram-project5-4fab6a1a47d8.herokuapp.com']
 
+# Custom user model for authentication
 AUTH_USER_MODEL = 'base.Users'
 
+# JWT configuration for user authentication
 SIMPLE_JWT = {
     "USER_ID_FIELD":'username'
 }
 
-# Application definition
-
+# Application definition - list of installed apps
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -67,12 +76,14 @@ INSTALLED_APPS = [
     "base",
 ]
 
+# Rest framework authentication classes
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'base.authenticate.CookiesAuthentication',
     )
 }
 
+# Middleware settings for request/response processing
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -85,6 +96,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+# List of allowed origins for CORS
 CORS_ALLOWED_ORIGINS = [
     "https://localhost:3000",
     "http://localhost:3000",
@@ -94,15 +106,18 @@ CORS_ALLOWED_ORIGINS = [
     'https://pictogram-project5-4fab6a1a47d8.herokuapp.com',
 ]
 
+# Allow credentials in CORS requests
 CORS_ALLOW_CREDENTIALS = True
 
+# URL configuration for routing
 ROOT_URLCONF = "backend.urls"
 
+# Template settings
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR, 'staticfiles', 'build')],
-        "APP_DIRS": True,
+        "DIRS": [os.path.join(BASE_DIR, 'staticfiles', 'build')],  # Directory for HTML files
+        "APP_DIRS": True,  # Look for templates in app directories
         "OPTIONS": {
             "context_processors": [
                 "django.template.context_processors.debug",
@@ -114,12 +129,12 @@ TEMPLATES = [
     },
 ]
 
+# WSGI application for the project
 WSGI_APPLICATION = "backend.wsgi.application"
 
 
-# Database
-# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
+# Database configuration
+# If in development, use SQLite, otherwise use PostgreSQL from DATABASE_URL
 if 'DEV' in os.environ:
     DATABASES = {
         'default': {
@@ -133,9 +148,7 @@ else:
     }
     print("connected")
 
-# Password validation
-# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
-
+# Password validation settings
 AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
@@ -151,28 +164,17 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
-# Internationalization
-# https://docs.djangoproject.com/en/5.1/topics/i18n/
-
+# Localization settings
 LANGUAGE_CODE = "en-us"
-
 TIME_ZONE = "UTC"
-
 USE_I18N = True
-
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/howto/static-files/
-
+# Static files settings (CSS, JavaScript, Images)
 STATIC_URL = "static/"
-
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 WHITENOISE_ROOT = BASE_DIR / 'staticfiles' / 'build'
 
 # Default primary key field type
-# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
-
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
