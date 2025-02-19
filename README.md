@@ -135,6 +135,93 @@ The colour scheme for Pictogram was designed to convey the a warm, welcoming and
 **Colour Pallete**:
 ![image](https://github.com/user-attachments/assets/3adcd016-7ac8-465d-9d84-78627752197f)
 
+These Colours were selected to:
+ - Make the Pictogram pop and stand out as a social media app
+ - Provide readability in the contrast of the colours
+ - Ensure a consistant and recognisable standard of colours
+
+**Implementation:**
+
+ - I made the primary buttons blue, with red and green when needed for example with save changes and logout buttons
+ - The neutral colors are used around the posts to bring out the vibrant colour in all of the users posts
+ - Black was used to outline may items, which allows any colour inside the outline to pop
+ - interactive elements had a consistant color of blue so the user knew what they could and could not use
+
+The selected color palette ensures the application is visually appealing, consistent with Pictograms's branding, and provides an intuitive user experience.
+
+## Fonts
+Pictogram utilizes Segoe UI from Google Fonts for its sleek, modern design. Its slightly taller letterforms enhance readability, making it ideal for both headers and body text. When paired with a sans-serif fallback, Segoe UI maintains a polished and uniform appearance across all devices.
+
+## WireFrames
+
+**Desktop View:**
+
+Home Page:
+![image](https://github.com/user-attachments/assets/3cad420a-3731-4fb9-9e3e-0426d276cc48)
+
+Search Page:
+![image](https://github.com/user-attachments/assets/f325005d-778c-4e4f-bdc1-689a8f69eb94)
+
+Login Page:
+![image](https://github.com/user-attachments/assets/545fa786-5eb8-486f-89c6-11f187950765)
+
+Register Page:
+![image](https://github.com/user-attachments/assets/11701a31-6ca0-4b47-95fa-f65fa16a467b)
+
+Create Posts Page:
+![image](https://github.com/user-attachments/assets/dccc68f6-a3e1-43f2-ade5-77e9cb255597)
+
+Settings Page:
+![image](https://github.com/user-attachments/assets/177b0606-9847-466e-8e4c-b84160bcfb76)
+
+User Profile Page:
+![image](https://github.com/user-attachments/assets/56e0d436-8be1-4390-9242-4b4f6d5af279)
+
+
+**Mobile View**
+Home Page:
+![image](https://github.com/user-attachments/assets/34854579-bff8-4d9f-bb78-f489a2755d14)
+
+Search Page:
+![image](https://github.com/user-attachments/assets/ff920555-2f09-42df-a429-d77c3994dc4b)
+
+Login Page:
+![image](https://github.com/user-attachments/assets/faef3bc5-1f18-454a-8269-f8399ac3d6ef)
+
+Register Page:
+![image](https://github.com/user-attachments/assets/65971b7b-dfe4-4ddb-9b08-076b54393384)
+
+Create Post Page:
+![image](https://github.com/user-attachments/assets/6ab82841-ea89-4b46-9e0e-217e38be2555)
+
+Settings Page:
+![image](https://github.com/user-attachments/assets/8c2551a1-0234-4e5b-a81a-61ef0689f638)
+
+User Profile Page:
+![image](https://github.com/user-attachments/assets/59afbd77-b18c-4d5a-90b1-b2ed1db0545c)
+
+
+**Tablet View**
+Home Page:
+![image](https://github.com/user-attachments/assets/e78f0e0f-9960-4f37-9a35-d5a0b9631fcc)
+
+Search Page:
+![image](https://github.com/user-attachments/assets/c36e4ebc-3e1b-4084-a36e-d7c19f4ce613)
+
+Login Page:
+![image](https://github.com/user-attachments/assets/0a9ba8fd-fdea-4834-b1f0-d6862a4c490d)
+
+Register Page:
+![image](https://github.com/user-attachments/assets/a1f0c880-b920-4973-906c-c94621c3fe61)
+
+Create Post Page:
+![image](https://github.com/user-attachments/assets/a0a71f85-c212-4ef9-b0f8-a4d4cba83055)
+
+Settings Page:
+![image](https://github.com/user-attachments/assets/4c9a0062-333e-4a7b-be2c-1a50874cee5c)
+
+User Profile Page:
+![image](https://github.com/user-attachments/assets/5b0e2538-875a-4deb-9086-ea5078fcde8f)
 
 ## Technologies Used
 
