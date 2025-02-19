@@ -4,7 +4,7 @@
 
 ## Backend:
 
-This repository contains the API set up using Django REST Framework for the FitShare front-end application
+This repository contains the API set up using Django REST Framework for the Pictogram front-end application
 [Live Website here](https://pictogram-project5-4fab6a1a47d8.herokuapp.com/)
 
 ## User Stories
