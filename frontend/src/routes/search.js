@@ -47,7 +47,7 @@ const UserProfile = ({username, profile_image, first_name, last_name}) => {
             <HStack w='90%' gap='20px' alignItems='center'>
 
                 <Box boxSize='70px' borderRadius='full' overflow='hidden' bg='white' border='1px solid'>
-                    <Image src={`${SERVER_URL}${profile_image}`} boxSize='100%' objectFit='cover'/>
+                    <Image src={profile_image} boxSize='100%' objectFit='cover'/>
                 </Box>
 
                 <VStack alignItems='start' gap='3px'>
