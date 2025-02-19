@@ -76,7 +76,7 @@ The testing phase confirmed that the Pictogram website meets all functional requ
 
 ## Frontend:
 
-* Please note that https://ui.dev/amiresponsive?url=https://pictogram-project5-4fab6a1a47d8.herokuapp.com/ does not work with my project, this is an error with their website and not my project or deployment
+![image](https://github.com/user-attachments/assets/e3ba1caf-edcd-4c99-92f7-2b249b1aedaa)
 
 ## Project Goals:
 
@@ -99,9 +99,6 @@ This project aims to
     - Error management such as personalized error messages
     - Secure authentication and user data handling
       
-
-
-
 
 ## Features
 
