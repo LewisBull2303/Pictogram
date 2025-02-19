@@ -28,13 +28,23 @@ const Settings = () => {
 
     const handleUpdate = async () => {
         try {
-            await update_user({"username":username, "profile_image": profile_image, "email":email, "first_name":firstName, "last_name":lastName, "bio":bio})
-            localStorage.setItem("userData", JSON.stringify({"username":username, "profile_image": profile_image, "email":email, "first_name":firstName, "last_name":lastName, "bio":bio}))
-            alert('successfully updated')
+            const formData = new FormData();
+    
+            // Append the fields to FormData
+            formData.append("username", username);
+            formData.append("profile_image", profile_image); // Ensure this is the file object
+            formData.append("email", email);
+            formData.append("first_name", firstName);
+            formData.append("last_name", lastName);
+            formData.append("bio", bio);
+    
+            await update_user(formData);  // Ensure your API supports FormData handling
+            localStorage.setItem("userData", JSON.stringify({ username, email, firstName, lastName, bio }));
+            alert('Successfully updated');
         } catch {
-            alert('error updating details')
+            alert('Error updating details');
         }
-    }
+    };
     
     return( 
         <Flex w='100%' justifyContent='center' pt='50px'>
