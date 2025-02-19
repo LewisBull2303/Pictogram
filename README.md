@@ -76,7 +76,7 @@ The testing phase confirmed that the Pictogram website meets all functional requ
 
 ## Frontend:
 
-![image](https://github.com/user-attachments/assets/e3ba1caf-edcd-4c99-92f7-2b249b1aedaa)
+![image](https://github.com/user-attachments/assets/4f7d6569-faf6-440e-8b44-10b7ad5d5b15)
 
 ## Project Goals:
 
