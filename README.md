@@ -26,6 +26,14 @@ Foreign key relation with the Users
 The following models were created to represent the database model structure of the application:
 ![image](https://github.com/user-attachments/assets/67fa2742-f464-4dd3-8842-800e84c97969)
 
+## Technologies Used
+
+**Languages and Frameworks**
+ - Python
+ - Django
+
+**Libraries and Tools**
+ - Cloudinary to store static files.
 
 ## Brief:
 
