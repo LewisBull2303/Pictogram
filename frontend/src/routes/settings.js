@@ -32,17 +32,36 @@ const Settings = () => {
     
             // Append the fields to FormData
             formData.append("username", username);
-            formData.append("profile_image", profile_image); // Ensure this is the file object
             formData.append("email", email);
             formData.append("first_name", firstName);
             formData.append("last_name", lastName);
             formData.append("bio", bio);
-    
-            await update_user(formData);  // Ensure your API supports FormData handling
-            localStorage.setItem("userData", JSON.stringify({ username, email, firstName, lastName, bio }));
-            alert('Successfully updated');
-        } catch {
+
+            // Only append profile_image if a new image is selected
+            if (profile_image) {
+                formData.append("profile_image", profile_image);
+            }
+
+            const response = await update_user(formData);
+            if (response.success) {
+                // Update localStorage with the new profile data
+                const updatedData = {
+                    username, 
+                    email, 
+                    first_name: firstName, 
+                    last_name: lastName, 
+                    bio,
+                    profile_image: response.profile_image // Assuming backend returns the new image URL
+                };
+                localStorage.setItem("userData", JSON.stringify(updatedData));
+
+                alert('Successfully updated');
+            } else {
+                alert('Error updating details');
+            }
+        } catch (error) {
             alert('Error updating details');
+            console.error("Error updating profile:", error);
         }
     };
     
