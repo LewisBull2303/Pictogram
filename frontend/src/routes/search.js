@@ -11,7 +11,6 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { search_users } from "../api/endpoints";
-import { SERVER_URL } from "../constants/constants";
 import { useNavigate } from "react-router-dom";
 
 const Search = () => {
