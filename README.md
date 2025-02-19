@@ -76,6 +76,8 @@ The testing phase confirmed that the Pictogram website meets all functional requ
 
 ## Frontend:
 
+* Please note that https://ui.dev/amiresponsive?url=https://pictogram-project5-4fab6a1a47d8.herokuapp.com/ does not work with my project, this is an error with their website and not my project or deployment
+
 ## Project Goals:
 
 In the modern day, dont you think that there is too much of a focus on what other people think? When you see a new post on social media, one of the first things most people do, is to check the comments. Pictogram aims to solve this. Pictogram is a social media that aims to bring social media back to its roots, no comments, just pictures and likes taking out the the ability for people to be negative.
@@ -97,7 +99,7 @@ This project aims to
     - Error management such as personalized error messages
     - Secure authentication and user data handling
       
-* Please note that https://ui.dev/amiresponsive?url=https://pictogram-project5-4fab6a1a47d8.herokuapp.com/ does not work with my project, this is an error with their website and not my project or deployment
+
 
 
 
