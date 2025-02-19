@@ -2,6 +2,8 @@
 
 **Developer - Lewis Bull**
 
+## Backend:
+
 This repository contains the API set up using Django REST Framework for the FitShare front-end application
 [Live Website here](https://pictogram-project5-4fab6a1a47d8.herokuapp.com/)
 
@@ -75,6 +77,12 @@ In the modern day, dont you think that there is too much of a focus on what othe
 This website allows users to create accounts, sign in, edit their profiles to their liking, create new posts, like other users posts, and to search for their family and friends to follow them.
 
 * Please note that https://ui.dev/amiresponsive?url=https://pictogram-project5-4fab6a1a47d8.herokuapp.com/ does not work with my project, this is an error with their website and not my project or deployment
+
+## Summary
+
+The testing phase confirmed that the Pictogram website meets all functional requirements and performs reliably across different scenarios. Manual tests have validated the robustness of the backend API, ensuring a secure and seamless user experience.
+
+##Frontend
 
 ## Features
 
