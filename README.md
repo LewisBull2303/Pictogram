@@ -102,31 +102,31 @@ This project aims to
 ## User Stories
 
 **Authentication Backlog**
-1. As a user, I can create an account to access all features of the platform.
-2. As a user, I can log in and maintain my session until I log out.
-3. As a user, I can log out to securely end my session.
-4. As a user, I can change my password to keep my account secure.
-5. As a user, I can update my username to reflect my identity.
+ 1. As a user, I can create an account to access all features of the platform.
+ 2. As a user, I can log in and maintain my session until I log out.
+ 3. As a user, I can log out to securely end my session.
+ 4. As a user, I can change my password to keep my account secure.
+ 5. As a user, I can update my username to reflect my identity.
 
 **Functionality Backlog**
-6. As a user, I can navigate the site using a navbar for easy access to all pages.
-7. As a user, I can see a custom 404 error page when accessing invalid URLs.
-8. As a user, I can experience a fully responsive platform across all devices.
-9. As a user, I can see feedback messages for actions like posting, or editing to confirm successful operations.
+ 6. As a user, I can navigate the site using a navbar for easy access to all pages.
+ 7. As a user, I can see a custom 404 error page when accessing invalid URLs.
+ 8. As a user, I can experience a fully responsive platform across all devices.
+ 9. As a user, I can see feedback messages for actions like posting, or editing to confirm successful operations.
 
 **Post Backlog**
-10. As a user, I can create posts with images to share my experiences.
-11. As a user, I can delete my posts to remove unwanted content.
-12. As a user, I can like or unlike a post to show my appreciation for the content.
-13. As a user, I can view all posts from other users
-14. As a user, I can view detailed information on individual posts, such as likes.
-15. As a user, I can view all posts created by a specific user to follow their content.
+ 10. As a user, I can create posts with images to share my experiences.
+ 11. As a user, I can delete my posts to remove unwanted content.
+ 12. As a user, I can like or unlike a post to show my appreciation for the content.
+ 13. As a user, I can view all posts from other users
+ 14. As a user, I can view detailed information on individual posts, such as likes.
+ 15. As a user, I can view all posts created by a specific user to follow their content.
 
 **Profile Backlog**
-16. As a user, I can view my profile to see my posts and account details.
-17. As a user, I can edit my profile information, including my bio and profile picture.
-18. As a user, I can see statistics on my profile, such as the number of followers and posts.
-19. As a user, I can follow or unfollow other users
+ 16. As a user, I can view my profile to see my posts and account details.
+ 17. As a user, I can edit my profile information, including my bio and profile picture.
+ 18. As a user, I can see statistics on my profile, such as the number of followers and posts.
+ 19. As a user, I can follow or unfollow other users
 
 ## Features
 
