@@ -1,21 +1,23 @@
-import { Flex, HStack, Text } from "@chakra-ui/react";
-import { useNavigate } from "react-router-dom";
+import { Flex, HStack, Text } from "@chakra-ui/react"; // Importing Flex, HStack, and Text components from Chakra UI
+import { useNavigate } from "react-router-dom"; // Importing the useNavigate hook from React Router
 
-import { CgProfile } from "react-icons/cg";
+// Importing icon components from React Icons
+import { CgProfile } from "react-icons/cg"; 
 import { IoAddCircleOutline } from "react-icons/io5";
 import { IoHomeOutline } from "react-icons/io5";
 import { FiUserPlus } from "react-icons/fi";
 import { MdOutlineLogin } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
 import { IoSettingsOutline } from "react-icons/io5";
-import { useAuth } from "../contexts/useAuth";
 
+// NavBar component to render the navigation bar with various icons and links
 const NavBar = () => {
-  const username = JSON.parse(localStorage.getItem("userData"))?.username;
-  const nav = useNavigate();
+  const username = JSON.parse(localStorage.getItem("userData"))?.username; // Get the username from localStorage
+  const nav = useNavigate(); // Initialize the navigation function
 
+  // Function to handle navigation when an icon is clicked
   const handleNavigation = (route) => {
-    nav(`/${route}`);
+    nav(`/${route}`); // Navigates to the specified route
   };
 
   return (
@@ -31,25 +33,26 @@ const NavBar = () => {
           Pictogram
         </Text>
         <HStack gap="20px">
-          <Text onClick={(route) => handleNavigation("search")}>
+          {/* Each Text element represents a clickable icon for navigation */}
+          <Text onClick={() => handleNavigation("search")}>
             <IoSearch size="22px" />
           </Text>
-          <Text onClick={(route) => handleNavigation(`${username}`)}>
+          <Text onClick={() => handleNavigation(`${username}`)}>
             <CgProfile size="22px" />
           </Text>
-          <Text onClick={(route) => handleNavigation("create/post")}>
+          <Text onClick={() => handleNavigation("create/post")}>
             <IoAddCircleOutline size="24px" />
           </Text>
-          <Text onClick={(route) => handleNavigation("")}>
+          <Text onClick={() => handleNavigation("")}>
             <IoHomeOutline size="22px" />
           </Text>
-          <Text onClick={(route) => handleNavigation("register")}>
+          <Text onClick={() => handleNavigation("register")}>
             <FiUserPlus size="20px" />
           </Text>
-          <Text onClick={(route) => handleNavigation("login")}>
+          <Text onClick={() => handleNavigation("login")}>
             <MdOutlineLogin size="20px" />
           </Text>
-          <Text onClick={(route) => handleNavigation("settings")}>
+          <Text onClick={() => handleNavigation("settings")}>
             <IoSettingsOutline size="20px" />
           </Text>
         </HStack>
@@ -58,4 +61,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default NavBar; // Exporting NavBar component for use in other parts of the app
