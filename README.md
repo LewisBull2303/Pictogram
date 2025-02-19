@@ -66,6 +66,7 @@ The manual testing of the user stories focused on ensuring that all functions an
 |Post Management| Create modify and delete posts| Users can manage their own posts, Admins can regulate posts|Works as expected|
 |Likes|Add and remove likes|Users can like and unlike posts, Admins can also remove and like posts|Works as expected|
 |Followers|Follow and unfollow users| Users can follow and unfollow other users, Admins can regulate followers if needed| Works as expected|
+|Authentications|Users need to be logged in to edit and create| Users need to be logged in as a registered account to be able to create, edit and delete anything on the website including but not limited to, posts and the users profile| Works as expected|
 
 ## Brief:
 
