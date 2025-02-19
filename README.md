@@ -61,7 +61,12 @@ The manual testing of the user stories focused on ensuring that all functions an
 
 | Test | Action | Expected Result | Actual Result |
 |---|---|---|---|
-|User Management| Create, Update and Delete users| Admin can manage user accounts correctly and with no errors| Works as expected|
+|User Management| Create, Update and Delete users| Admin can manage user accounts correctly and with no errors|Works as expected|
+|Profile Managemet|Create delete and modify users profiles| Users can manage their own profiles, as well as admins|Works as expected|
+|Post Management| Create modify and delete posts| Users can manage their own posts, Admins can regulate posts|Works as expected|
+|Likes|Add and remove likes|Users can like and unlike posts, Admins can also remove and like posts|Works as expected|
+|Followers|Follow and unfollow users| Users can follow and unfollow other users, Admins can regulate followers if needed| Works as expected|
+
 ## Brief:
 
 In the modern day, dont you think that there is too much of a focus on what other people think? When you see a new post on social media, one of the first things most people do, is to check the comments. Pictogram aims to solve this. Pictogram is a social media that aims to bring social media back to its roots, no comments, just pictures and likes taking out the the ability for people to be negative.
