@@ -34,6 +34,33 @@ The following models were created to represent the database model structure of t
 
 **Libraries and Tools**
  - Cloudinary to store static files.
+ - dj-database-url to access the database correctly
+ - Git to upload changes to github
+ - GitHub was used as a remote repository to store project code.
+ - Django REST Framework was used to build the back-end API.
+ - Pillow was used for image processing and validation.
+ - Psycopg2 was used as a PostgreSQL database adapter for Python.
+ - PostgreSQL – deployed project on Render uses a PostgreSQL database.
+ - Gunicorn to upload the project to Heroku
+
+
+## Validation
+
+**PEP8 Validation**
+
+PEP8 Validation Service was used to check the code for PEP8 requirements. All the code passes with no errors or warnings.
+
+## Testing
+
+Comprehensive testing was conducted to ensure the robustness and reliability of my projects functionality. The testing process included manual testing all functions and features
+
+
+## Manual Testing of User Stories
+
+The manual testing of the user stories focused on ensuring that all functions and features work as expected. Each feature was tested rigorously for expeted outcomes and edge cases
+
+| Test | Action | Expected Result | Actual Result |
+|---|---|---|---|
 
 ## Brief:
 
