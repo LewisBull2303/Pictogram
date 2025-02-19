@@ -128,6 +128,14 @@ This project aims to
  - 18. As a user, I can see statistics on my profile, such as the number of followers and posts.
  - 19. As a user, I can follow or unfollow other users
 
+## Colours
+
+The colour scheme for Pictogram was designed to convey the a warm, welcoming and familirar energy, while maintaining a modern and user-friendly aesthetic. The bold blue is the primary accent color. It is complemented by several neautral colors such as greys, whites and blacks. Additionally on some pages there are stark contrast with greens and reds for buttons and interactible items This all helps to give the website a modern and minimalist look, whilst maintaining a clean and enjoyable design
+
+**Colour Pallete**:
+![image](https://github.com/user-attachments/assets/3adcd016-7ac8-465d-9d84-78627752197f)
+
+
 ## Features
 
 - ### Navigation Bar
