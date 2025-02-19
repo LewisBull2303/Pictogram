@@ -59,7 +59,7 @@ class PostSerializer(serializers.ModelSerializer):
     def get_formatted_date(self, obj):
         return obj.created_at.strftime("%d %b %y")
 
-    def get_profile_image_url(self, obj):
+    def get_post_image_url(self, obj):
         return obj.post_image.url
 
 class UserSerializer(serializers.ModelSerializer):
