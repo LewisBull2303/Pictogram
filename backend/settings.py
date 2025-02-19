@@ -39,7 +39,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'https://pictogram-project5-4fab6a1a47d8.herokuapp.com/','pictogram-project5-4fab6a1a47d8.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'https://pictogram-project5-4fab6a1a47d8.herokuapp.com/','pictogram-project5-4fab6a1a47d8.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = ['https://localhost:3000', 'https://pictogram-project5-4fab6a1a47d8.herokuapp.com/','http://pictogram-project5-4fab6a1a47d8.herokuapp.com']
 
