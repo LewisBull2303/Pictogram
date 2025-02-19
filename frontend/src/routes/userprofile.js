@@ -1,7 +1,6 @@
 import { Text, VStack, Flex, Box, Heading, HStack, Image, Button, Spacer} from '@chakra-ui/react'
 import { useEffect, useState } from 'react';
 import { get_user_posts, get_user_profile_data, toggleFollow } from '../api/endpoints';
-import { SERVER_URL } from '../constants/constants';
 import { useNavigate } from 'react-router-dom';
 
 import Post from '../components/posts';

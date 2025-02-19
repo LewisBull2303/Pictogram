@@ -4,7 +4,7 @@ from django.contrib.auth.models import AbstractUser
 # Create your models here.
 class Users(AbstractUser):
     username = models.CharField(max_length=50, unique=True, primary_key=True)
-    bio = models.CharField(max_length=500)
+    bio = models.CharField(max_length=500, blank=True)
     profile_image = models.ImageField(upload_to='images/', default='../Default_pfp_nxyoza.jpg')
     followers = models.ManyToManyField('self', symmetrical=False, related_name='following', blank=True)
 
