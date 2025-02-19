@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom"
 
 const Settings = () => {
 
-    const storage = JSON.parse(localStorage.getItem('userData'))
+    const storage = JSON.parse(localStorage.getItem('user_data'))
 
     const [username, setUsername] = useState(storage ? storage.username : '')
     const [email, setEmail] = useState(storage ? storage.email : '')
@@ -29,7 +29,7 @@ const Settings = () => {
     const handleUpdate = async () => {
         try {
             await update_user({"username":username, "profile_image": profile_image, "email":email, "first_name":firstName, "last_name":lastName, "bio":bio})
-            localStorage.setItem("userData", JSON.stringify({"username":username, "email":email, "first_name":firstName, "last_name":lastName, "bio":bio}))
+            localStorage.setItem("user_data", JSON.stringify({"username":username, "email":email, "first_name":firstName, "last_name":lastName, "bio":bio}))
             alert('successfully updated')
         } catch {
             alert('error updating details')
