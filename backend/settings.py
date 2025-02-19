@@ -37,7 +37,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+X_FRAME_OPTIONS = 'ALLOW-FROM https://ui.dev/amiresponsive'
 
 ALLOWED_HOSTS = ['127.0.0.1', 'https://pictogram-project5-4fab6a1a47d8.herokuapp.com/','pictogram-project5-4fab6a1a47d8.herokuapp.com', 'localhost']
 
