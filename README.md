@@ -169,14 +169,13 @@ Register Page:
 ![image](https://github.com/user-attachments/assets/11701a31-6ca0-4b47-95fa-f65fa16a467b)
 
 Create Posts Page:
-![image](https://github.com/user-attachments/assets/dccc68f6-a3e1-43f2-ade5-77e9cb255597)
+![image](https://github.com/user-attachments/assets/6d2028fe-1717-4d08-810e-486abd553bb2)
 
 Settings Page:
-![image](https://github.com/user-attachments/assets/177b0606-9847-466e-8e4c-b84160bcfb76)
+![image](https://github.com/user-attachments/assets/9653c86a-983b-49af-971b-bb63ee81cc40)
 
 User Profile Page:
-![image](https://github.com/user-attachments/assets/56e0d436-8be1-4390-9242-4b4f6d5af279)
-
+![image](https://github.com/user-attachments/assets/749fa5fa-97c8-42cf-87b5-4b9c845c6581)
 
 **Mobile View**
 Home Page:
