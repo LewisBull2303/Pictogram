@@ -1,10 +1,10 @@
 # Lewis Bull - Pictogram
 
-**Developer - Lewis Bull**
+### Developer - Lewis Bull
 
 ## Backend:
 
-This repository contains the API set up using Django REST Framework for the Pictogram front-end application
+This repository contains the API set up using Django REST Framework for the Pictogram front-end application.
 [Live Website here](https://pictogram-project5-4fab6a1a47d8.herokuapp.com/)
 
 ## User Stories
@@ -15,13 +15,13 @@ As an admin, I want to be able to create, edit, and delete users, posts and like
 
 Users Model
 The Profile model contains the following fields: username, bio, profile image, Followers.
-One-to-one relation between the username  field and the user field in the posts model
+One-to-one relation between the username  field and the user field in the posts model.
 Default profile image is used if no image is uploaded.
-The bio is unable to be empty to avoid errors
+The bio is unable to be empty to avoid errors.
 
 Post Model
-The Post model contains the following fields: user, post_image, created_at, likes
-Foreign key relation with the Users
+The Post model contains the following fields: user, post_image, created_at, likes.
+Foreign key relation with the Users.
 
 
 ## Database: 
@@ -30,36 +30,36 @@ The following models were created to represent the database model structure of t
 
 ## Technologies Used
 
-**Languages and Frameworks**
- - Python
- - Django
+### Languages and Frameworks
+ - Python.
+ - Django.
 
-**Libraries and Tools**
+### Libraries and Tools
  - Cloudinary to store static files.
- - dj-database-url to access the database correctly
- - Git to upload changes to github
+ - dj-database-url to access the database correctly.
+ - Git to upload changes to github.
  - GitHub was used as a remote repository to store project code.
  - Django REST Framework was used to build the back-end API.
  - Pillow was used for image processing and validation.
  - Psycopg2 was used as a PostgreSQL database adapter for Python.
  - PostgreSQL – deployed project on Render uses a PostgreSQL database.
- - Gunicorn to upload the project to Heroku
+ - Gunicorn to upload the project to Heroku.
 
 
 ## Validation
 
-**PEP8 Validation**
+### PEP8 Validation
 
 PEP8 Validation Service was used to check the code for PEP8 requirements. All the code passes with no errors or warnings.
 
 ## Testing
 
-Comprehensive testing was conducted to ensure the robustness and reliability of my projects functionality. The testing process included manual testing all functions and features
+Comprehensive testing was conducted to ensure the robustness and reliability of my projects functionality. The testing process included manual testing all functions and features.
 
 
 ## Manual Testing of User Stories
 
-The manual testing of the user stories focused on ensuring that all functions and features work as expected. Each feature was tested rigorously for expeted outcomes and edge cases
+The manual testing of the user stories focused on ensuring that all functions and features work as expected. Each feature was tested rigorously for expected outcomes and edge cases.
 
 | Test | Action | Expected Result | Actual Result |
 |---|---|---|---|
@@ -84,68 +84,68 @@ In the modern day, dont you think that there is too much of a focus on what othe
 
 This project aims to
  1. Offer a smooth platform for users to:
-    - Share their own pictures and photos without negativity
-    - Interact with others by liking other users' posts and following other users
+    - Share their own pictures and photos without negativity.
+    - Interact with others by liking other users' posts and following other users.
  2. Improve user engagement by providing:
-    - The capability to create and modify user profiles
-    - Instant feedback when liking or following a user
+    - The capability to create and modify user profiles.
+    - Instant feedback when liking or following a user.
  3. Deliver an exceptional user experience with:
-    - Creative navigation and adaptive design across all devices
-    - Features like Infinite Scrolling on the homepage and user search
+    - Creative navigation and adaptive design across all devices.
+    - Features like Infinite Scrolling on the homepage and user search.
  4. Enable users to customize their experience by:
-    - Viewing and altering their own profiles and posts
-    - Tailoring their feed with likes and follows
+    - Viewing and altering their own profiles and posts.
+    - Tailoring their feed with likes and follows.
  5. Ensure high accessibility and dependability through:
-    - Error management such as personalized error messages
-    - Secure authentication and user data handling
+    - Error management such as personalized error messages.
+    - Secure authentication and user data handling.
       
 ## User Stories
 
-**Authentication Backlog**
+### Authentication Backlog
  - 1. As a user, I can create an account to access all features of the platform.
  - 2. As a user, I can log in and maintain my session until I log out.
  - 3. As a user, I can log out to securely end my session.
  - 4. As a user, I can change my password to keep my account secure.
  - 5. As a user, I can update my username to reflect my identity.
 
-**Functionality Backlog**
+### Functionality Backlog
  - 6. As a user, I can navigate the site using a navbar for easy access to all pages.
  - 7. As a user, I can see a custom 404 error page when accessing invalid URLs.
  - 8. As a user, I can experience a fully responsive platform across all devices.
  - 9. As a user, I can see feedback messages for actions like posting, or editing to confirm successful operations.
 
-**Post Backlog**
+### Post Backlog
  - 10. As a user, I can create posts with images to share my experiences.
  - 11. As a user, I can delete my posts to remove unwanted content.
  - 12. As a user, I can like or unlike a post to show my appreciation for the content.
- - 13. As a user, I can view all posts from other users
+ - 13. As a user, I can view all posts from other users.
  - 14. As a user, I can view detailed information on individual posts, such as likes.
  - 15. As a user, I can view all posts created by a specific user to follow their content.
 
-**Profile Backlog**
+### Profile Backlog
  - 16. As a user, I can view my profile to see my posts and account details.
  - 17. As a user, I can edit my profile information, including my bio and profile picture.
  - 18. As a user, I can see statistics on my profile, such as the number of followers and posts.
- - 19. As a user, I can follow or unfollow other users
+ - 19. As a user, I can follow or unfollow other users.
 
 ## Colours
 
-The colour scheme for Pictogram was designed to convey the a warm, welcoming and familirar energy, while maintaining a modern and user-friendly aesthetic. The bold blue is the primary accent color. It is complemented by several neautral colors such as greys, whites and blacks. Additionally on some pages there are stark contrast with greens and reds for buttons and interactible items This all helps to give the website a modern and minimalist look, whilst maintaining a clean and enjoyable design
+The colour scheme for Pictogram was designed to convey a warm, welcoming and familiar energy, while maintaining a modern and user-friendly aesthetic. The bold blue is the primary accent colour. It is complemented by several neutral colours such as greys, whites and blacks. Additionally on some pages there are stark contrast with greens and reds for buttons and interactable items This all helps to give the website a modern and minimalist look, whilst maintaining a clean and enjoyable design.
 
-**Colour Pallete**:
+### Colour Pallete:
 ![image](https://github.com/user-attachments/assets/3adcd016-7ac8-465d-9d84-78627752197f)
 
 These Colours were selected to:
- - Make the Pictogram pop and stand out as a social media app
- - Provide readability in the contrast of the colours
- - Ensure a consistant and recognisable standard of colours
+ - Make the Pictogram pop and stand out as a social media app.
+ - Provide readability in the contrast of the colours.
+ - Ensure a consistant and recognisable standard of colours.
 
-**Implementation:**
+### Implementation:
 
- - I made the primary buttons blue, with red and green when needed for example with save changes and logout buttons
- - The neutral colors are used around the posts to bring out the vibrant colour in all of the users posts
- - Black was used to outline may items, which allows any colour inside the outline to pop
- - interactive elements had a consistant color of blue so the user knew what they could and could not use
+ - I made the primary buttons blue, with red and green when needed for example with save changes and logout buttons.
+ - The neutral colors are used around the posts to bring out the vibrant colour in all of the users posts.
+ - Black was used to outline may items, which allows any colour inside the outline to pop.
+ - interactive elements had a consistant color of blue so the user knew what they could and could not use.
 
 The selected color palette ensures the application is visually appealing, consistent with Pictograms's branding, and provides an intuitive user experience.
 
@@ -154,7 +154,7 @@ Pictogram utilizes Segoe UI from Google Fonts for its sleek, modern design. Its 
 
 ## WireFrames
 
-**Desktop View:**
+### Desktop View:
 
 Home Page:
 ![image](https://github.com/user-attachments/assets/3cad420a-3731-4fb9-9e3e-0426d276cc48)
@@ -177,7 +177,7 @@ Settings Page:
 User Profile Page:
 ![image](https://github.com/user-attachments/assets/749fa5fa-97c8-42cf-87b5-4b9c845c6581)
 
-**Mobile View**
+### Mobile View
 Home Page:
 ![image](https://github.com/user-attachments/assets/114752d8-4ccb-4d19-a546-6f68381eb779)
 
@@ -201,7 +201,7 @@ User Profile Page:
 
 
 
-**Tablet View**
+### Tablet View
 Home Page:
 ![image](https://github.com/user-attachments/assets/e78f0e0f-9960-4f37-9a35-d5a0b9631fcc)
 
@@ -225,36 +225,36 @@ User Profile Page:
 
 ## Technologies Used
 
-**Languages**
- - HTML
- - CSS
- - JavaScript(React)
+### Languages
+ - HTML.
+ - CSS.
+ - JavaScript(React).
 
-**Libraries, Framewords and Dependencies**
+### Libraries, Frameworks and Dependencies
 - React - Core library for building the user interface of Pictogram.
 - React DOM - Provides DOM methods for React.
 - React Router DOM - Enables routing to navigate between pages without reloading.
 - Axios - Used to make requests to the backend APIs
-- React Icons - Provides plenty of custom icons to make the project look better and stand out
-- @chakra-ui/react - provides a comprenhsive collection of objects to make webpages in react
+- React Icons - Provides plenty of custom icons to make the project look better and stand out.
+- @chakra-ui/react - provides a comprehensive collection of objects to make webpages in react.
 
-**Development Tools**
-- React Scripts - Was the core for sunning script, building and running the app
+### Development Tools
+- React Scripts - Was the core for sunning script, building and running the app.
 
-**Tools and Programs**
-- Am I Responsive - Shows how Pictogram looks on differnt devices and provides a preview image which was used above
+### Tools and Programs
+- Am I Responsive - Shows how Pictogram looks on different devices and provides a preview image which was used above.
 - Cloudinary - Managed and served high-quality images and media assets efficiently.
 - Git - Used for version control, which helps with coding error-free.
-- GitHub - Hosted the Pictogram repository, Allowing me to showcase all my code and the process I took to make this project
+- GitHub - Hosted the Pictogram repository, Allowing me to showcase all my code and the process I took to make this project.
 
-**Engines**
+### Engines
  - Node.js: 16.19.1
  - NPM: 8.19.3
 
 ## React:
 Pictogram is developed with React, a robust JavaScript library designed for building dynamic and interactive user interfaces. Its flexibility and modular architecture make React an ideal choice for creating scalable and maintainable applications like Pictogram.
 
-**Why React?:**
+### Why React?:
 - Popularity: React is trusted by major platforms like Meta (Facebook), Instagram, and Netflix, showcasing its reliability for large-scale social and media applications.
 - Flexibility: With its modular structure, React enables efficient code management and scalability.
 - React Libraries: React offers a wide range of libraries, such as axios and chakra-ui which allows me to create large and scaleable apps.
@@ -265,52 +265,52 @@ Pictogram is developed with React, a robust JavaScript library designed for buil
 
 Pictogram’s back-end is built using the Django REST Framework (DRF), which efficiently handles all data and operations. It ensures a smooth user experience by managing user authentication, posts, comments, and profiles. The API serves as the core structure, supporting all essential features of the app.
 
-**Key Features of the API**
+### Key Features of the API
 - User Authentication: Secure endpoints are provided for logging in, registering, and managing user sessions.
 - Post Management: Users can create, update, delete, and retrieve posts with full CRUD functionality.
-- Like Functionality: Users can like and unlike on posts
-- Follow Functionality: Users can follow and unfollow other user accounts
+- Like Functionality: Users can like and unlike on posts.
+- Follow Functionality: Users can follow and unfollow other user accounts.
 - Profile Control: Users have the ability to view and edit their profiles and manage passwords.
 - Performance Optimizations: Efficient serializers and query optimizations ensure fast data responses.
 
 ## Features
 
-- ### Navigation Bar
+- ###  Navigation Bar
 |User Stories|Step|Expected Outcome|Result|
 |---|---|---|---|
 |As a user all of the navigation buttons works as intended| Click on all of the navigation buttons|All the buttons take the user to the correct location|All buttons are working as intended|
   - Featured At the top of the screen there is a Navigation bar, on the right of the navigation bar there are modern looking icons which take the user to all the different pages of the website. In the top left is the name of the website name was well. it does not follow the user as they scroll down the page, this is to allow the user to see all the parts of the website unobstructed.
   - The navbar is in a modern blue and white colour scheme which stands from the rest of the website and adds another layer of colour to the website
-  - The navigation is in a modern font which was chosen especially to appeal to the most people and remain modern and plesent to look at.
-  - The navigation bar has no text after the icons to make the navigation bar look clean and consise.
+  - The navigation is in a modern font which was chosen especially to appeal to the most people and remain modern and pleasant to look at.
+  - The navigation bar has no text after the icons to make the navigation bar look clean and concise.
   ![image](https://github.com/user-attachments/assets/d8730292-2214-4c4f-9595-b0087169b500)
 
 
-- ### Posts
+- ###  Posts
 |User Stories|Step|Expected Outcome|Result|
 |---|---|---|---|
 |As a user I should be able to see all users posts and like them|Check if the user can see other users posts and like the post to see if the likes are working correctly| All users posts are on the homepage and the user can like them|All works as intended|
 |As a user I should not be able to see more than 10 posts at a time|Check if the user can only load 10 posts at once|There will be 10 posts at a time on the home page| All working as intended|
 |As a user I should be able to click on the load more button to let me see more posts|Check if the load more button appears if there is more than 10 posts| The load more button will appear and load 10 more posts| All working as intended|
-  - The main function of the website is the posts. It has an image that is centerd to the middle of the post object
-  - It has a like button where users can like posts and give approval and it has the date in the bottom right of the post
-  - The posts are both on the home page and the users who posted its profile
+  - The main function of the website is the posts. It has an image that is centered to the middle of the post object.
+  - It has a like button where users can like posts and give approval and it has the date in the bottom right of the post.
+  - The posts are both on the home page and the users who posted its profile.
 ![image](https://github.com/user-attachments/assets/254081ce-57d4-4823-9363-ecde7946b605)
 
-- ### Search Page
+- ###  Search Page
 |User Stories|Step|Expected Outcome|Result|
 |---|---|---|---|
 |As a user I should be able to search for other users|Go to the search page and search for another user and see what comes up|All users that were searched for will appear|All works as intended|
 |As a user when I click on another users name it will take me to their profile page| Click on another users username and see if it takes me to their profile| It will take me to the users profile|All working as intended|
--   The first icon is the search page icon, it allows for users to search for any other users that they want
--   There is a text box for the search query which is where the user can input the username of the person that they want to find
--   Next to the text box for searching is the submit button which allows the user to find the other people on the site
--   Clicking on the users that you search takes you to their profile page
+-   The first icon is the search page icon, it allows for users to search for any other users that they want.
+-   There is a text box for the search query which is where the user can input the username of the person that they want to find.
+-   Next to the text box for searching is the submit button which allows the user to find the other people on the site.
+-   Clicking on the users that you search takes you to their profile page.
 ![image](https://github.com/user-attachments/assets/88e0e55f-10f6-48d3-ac83-a18b8c8ad011)
 ![image](https://github.com/user-attachments/assets/677ce723-85f7-4aed-8e69-55189843b90b)
 
 
-- ### Profile Page
+- ###  Profile Page
 |User Stories|Step|Expected Outcome|Result|
 |---|---|---|---|
 |As a user I should be able to see my posts|Go to the user page and see if the users posts appear|Only the users posts will appear|All works as intended|
@@ -319,91 +319,91 @@ Pictogram’s back-end is built using the Django REST Framework (DRF), which eff
 |As a user any new post I make appears on my profile page| Create a new post and see if it comes on the profile page| The post will appear on the users profile page|All works as intended|
 |As a user, when I go to another users page the edit profile button will change into a follow/unfollow button|Check on another users profile if the button changes|The button will change as needed|All working as intended|
 |As a user, When I follow someone or someone follows me it should add 1 to the follower or following count|Follow another user and see if the count updates|The count will update|All working as intended|
--   The next icon brings you to the profile page, this page is unique to every user on the sight, with their @
+-   The next icon brings you to the profile page, this page is unique to every user on the site, with their @.
 -   there is a followers and following count which shows the users how many people they follow and how many follow them.
--   Under the following section there is the edit profile button, which takes you to the settings page where the user can edit their profile. If the user is looking at another users account then the button will turn blue and say 'Follow' which allows the users to follow one another, if the user is already following them then it will say 'Unfollow'
--   Underneath the edit profile button is the bio of the users profile which they can edit in the setting page, this can 255 characters long maximum
--   Underneath all of this is the posts section, where 3 posts can fit in one row and then the new row starts, the posts have all the same functionality as the posts in the home page
+-   Under the following section there is the edit profile button, which takes you to the settings page where the user can edit their profile. If the user is looking at another users account then the button will turn blue and say 'Follow' which allows the users to follow one another, if the user is already following them then it will say 'Unfollow'.
+-   Underneath the edit profile button is the bio of the users profile which they can edit in the settings page, this can be 255 characters long, maximum.
+-   Underneath all of this is the posts section, where 3 posts can fit in one row and then the new row starts, the posts have all the same functionality as the posts in the home page.
 ![image](https://github.com/user-attachments/assets/f53a2fb3-db06-4520-8fd2-ad97531531f0)
 ![image](https://github.com/user-attachments/assets/caf4496f-aae1-45b1-a6ec-2dbf080c4eb6)
 ![image](https://github.com/user-attachments/assets/432832a3-5b14-4444-b2e3-036947915578)
 
 
-- ### Create Posts page
+- ###  Create Posts page
 |User Stories|Step|Expected Outcome|Result|
 |---|---|---|---|
 |As a user, when I create a post it will have the correct image|Create a new post and see if the image is correct|The image will be correct with the correct url|All working as intended|
 |As a user when I create a new post It will appear on my profile|Create a new post and see if it is on the profile page| The post will be on the profile page| All working as intended|
 |As a user when I create a new post It will appear on the home page|Create a new post and see if it is on the home page| The post will be on the home page| All working as intended|
--   The next section along in the navigation bar is the create posts page
--   This page has a large modern header and a small bit of text instructing the user
--   Under this there is an input file area where the user can upload their image for their post
--   When the user uploads and image, a example image will apear under the upload area for the user to see how the post will look after they create the post
--   Under the example of what the post will look like there is the create post button which will make the post and then take the user back to the home page to see their new post
+-   The next section along in the navigation bar is the create posts page.
+-   This page has a large modern header and a small bit of text instructing the user.
+-   Under this there is an input file area where the user can upload their image for their post.
+-   When the user uploads and image, a example image will appear under the upload area for the user to see how the post will look after they create the post.
+-   Under the example of what the post will look like there is the create post button which will make the post and then take the user back to the home page to see their new post.
 ![image](https://github.com/user-attachments/assets/c3f604a9-6616-426f-b4a4-28577d619336)
 ![image](https://github.com/user-attachments/assets/b75151c5-12c1-4281-aa4b-352eb77ce36e)
 
-- ### Home Page
+- ###  Home Page
 |User Stories|Step|Expected Outcome|Result|
 |---|---|---|---|
 |As a user when I create a new post It will appear on the home page|Create a new post and see if it is on the home page| The post will be on the home page| All working as intended|
 |As a user I should be able to see all users posts and like them|Check if the user can see other users posts and like the post to see if the likes are working correctly| All users posts are on the homepage and the user can like them|All works as intended|
--   The next icon in the navbar, takes you to the home page is where all of the posts from all users are. They are in one line and load 10 pictures at a time. All of the pictures are designed to be small and easy to see
--   If there is more than 10 posts on the home page a modern looking button will appear called load more, which will allow the user to load 10 more posts which limits the stress the posts have on the server
+-   The next icon in the navbar, takes you to the home page is where all of the posts from all users are. They are in one line and load 10 pictures at a time. All of the pictures are designed to be small and easy to see.
+-   If there is more than 10 posts on the home page a modern looking button will appear called load more, which will allow the user to load 10 more posts which limits the stress the posts have on the server.
 -   There is a clear and accurate header at the top of the page, which is centered in the middle.
 ![image](https://github.com/user-attachments/assets/aa5cd976-2841-49fb-8925-fec49da68819)
 
 
-- ###  Register User Page
+- ###   Register User Page
 |User Stories|Step|Expected Outcome|Result|
 |---|---|---|---|
 |As a user, when I register I will be able to login to my account|Create a new account as see If registration is successful|The registration will be successful|All working as inteneded
 |As a user, When I register I will need to create a unique username|Create an account that has a duplicate username and see if it is caught|The registration will not go through|The registration does not go through, All working as intended|
 |As a user, When I register I will have to confirm my password to ensure no spelling mistakes|Create a new account and see the confirm password box|The user will not be able to register if the passwords do not match|All working as intended|
--   The next icon in the navbar is the regitser user icon, which allows the user to create a account
--   It has multiple text inputs where the user has to input their desired username, their first and last name, and then their password and confirm password,
--   After this there is a regsiter button which completes the process and saves the user to the database
--   Under the button there is text which allows the user to go straight to the login page if they already have an account
--   Once the user has completed registration it takes them to the login page
+-   The next icon in the navbar is the regitser user icon, which allows the user to create a account.
+-   It has multiple text inputs where the user has to input their desired username, their first and last name, and then their password and confirm password.
+-   After this there is a register button which completes the process and saves the user to the database.
+-   Under the button there is text which allows the user to go straight to the login page if they already have an account.
+-   Once the user has completed registration it takes them to the login page.
 ![image](https://github.com/user-attachments/assets/75a81b11-7be3-4bc4-8bb3-1e088d32e348)
   
-- ###  Login User Page
+- ###   Login User Page
 |User Stories|Step|Expected Outcome|Result|
 |---|---|---|---|
 |As a user, No one should be able to access my account without the password and username|Try and login to an account with an incorrect user or password|The login will not work as details are not correct|All working as intended|
 |As a user, once I register I should immediatly be able to login to the account|Create a new account and try to login immediatly|The login will work correctly|All working as intended|
--   The next icon in the navbar is the Login user icon, which allows the user to login to their account, After the register user page this will automatically load
--   The user will have to endter their username and password that they signed up with otherwise they cant login to their account
--   There is a modern button which allows the player to login to their account and this will then take them to the user profile page
--   Under the button there is text which allows the user to go straight to the register page if they dont already have an account
+-   The next icon in the navbar is the Login user icon, which allows the user to login to their account, After the register user page this will automatically load.
+-   The user will have to enter their username and password that they signed up with otherwise they cant login to their account.
+-   There is a modern button which allows the player to login to their account and this will then take them to the user profile page.
+-   Under the button there is text which allows the user to go straight to the register page if they dont already have an account.
 ![image](https://github.com/user-attachments/assets/c470d8ee-05df-46ec-b3dc-9e568dc03514)
 
-- ###  Settings Page
+- ###   Settings Page
 |User Stories|Step|Expected Outcome|Result|
 |---|---|---|---|
 |As a user when I update my settings It will change on the profile page|Change an option in the settings page and see if it updates the profile page|The profile page will update|All working as intended|
 |As a user when I logout I can no longer access my account| Click the logout button on the settings page and see if it will log me out of my user| The user will be logged out and taken to the login page| All working as intended|
--   The last and final icon in the navbar is the settings icon, which allows the user to change their profile
--   The user will be able to edit their username, profile picture, email, first and last name as well as their bio
--   There is a button to save changes which then will save their updated profile to the database
--   Underneath the save changes button there is a button to logout of the users account, which will take them back to the login page
--   The settings page can also be accessed by clicking on the edit profile button on the users profile
+-   The last and final icon in the navbar is the settings icon, which allows the user to change their profile.
+-   The user will be able to edit their username, profile picture, email, first and last name as well as their bio.
+-   There is a button to save changes which then will save their updated profile to the database.
+-   Underneath the save changes button there is a button to logout of the users account, which will take them back to the login page.
+-   The settings page can also be accessed by clicking on the edit profile button on the users profile.
 ![image](https://github.com/user-attachments/assets/a8ab2ebd-1111-45ef-8be5-828a06bf4954)
 
 
 ## Future Features / Improvements
 
-Whilst it is a great program, Pictogram has many area where it could be improved, these are a few that could make Pictogram a household name:
+Whilst it is a great program, Pictogram has many areas where it could be improved, these are a few that could make Pictogram a household name:
 
-- Linking to other Social media - Allowing users to link their Pictogram accounts to their other social medias will take Pictogram to the next level
-- Forgot Password Button - Adding a Button that allows users to get an email if they forgot their password to reset it
-- Messaging system - Adding a messaging system to Pictogram would allow it to truly flourish as a social media
-- Filters - Allowing users to filter the post the posts they see by the people they follow or other posts they like
-- Email Authntication - Making so that to sign up, users need to confirm an email address will add another level of security to Pictogram
+- Linking to other Social media - Allowing users to link their Pictogram accounts to their other social medias will take Pictogram to the next level.
+- Forgot Password Button - Adding a Button that allows users to get an email if they forgot their password to reset it.
+- Messaging system - Adding a messaging system to Pictogram would allow it to truly flourish as a social media.
+- Filters - Allowing users to filter the post the posts they see by the people they follow or other posts they like.
+- Email Authentication - Making so that to sign up, users need to confirm an email address will add another level of security to Pictogram.
 
 ## Validation
 
-**CSS Validation**
+### CSS Validation
 The W3C Jigsaw CSS Validation Service confirmed all CSS modules are error-free.
 
 App.css:
@@ -413,14 +413,14 @@ Index.css:
 ![image](https://github.com/user-attachments/assets/fa86e4bc-cf7f-4443-9bc4-08bb00d5b825)
 
 
-**HTML Validation**
+### HTML Validation
 The W3C Markup Validation Service confirmed the website’s HTML is error-free and fully compliant.
 ![image](https://github.com/user-attachments/assets/989d3128-2d85-4de0-8e2f-494f0990d734)
 
 
-**JSX Validation:**
+### JSX Validation:
 
-All Code passed the Eslint Validator, except Eslint did not understand some of the additonal libraries I was importing and then flagged various things up as undefined when in the code, They made perfect sense and ran correctly. See below al screenshots
+All Code passed the Eslint Validator, except Eslint did not understand some of the additional libraries I was importing and then flagged various things up as undefined when in the code, They made perfect sense and ran correctly. See below all screenshots.
 Create_Post.js:
 ![image](https://github.com/user-attachments/assets/7b9c6b2d-6e6e-4301-8f52-96b8d5da34ce)
 ![image](https://github.com/user-attachments/assets/133e40ba-243e-4164-92f6-f74d1c1cde9c)
@@ -491,8 +491,8 @@ useAuth.js
 ![image](https://github.com/user-attachments/assets/7c4c8efb-8f08-40fc-acce-f29c91f302f7)
 ![image](https://github.com/user-attachments/assets/d1816753-4aba-48e3-9203-018676f43f86)
 
-**Lighthouse Validation**
-I used the lighthouse validator to confirm that all of my elements and pages are accessible and easy to use
+### Lighthouse Validation
+I used the lighthouse validator to confirm that all of my elements and pages are accessible and easy to use.
 
 Login Page
 ![image](https://github.com/user-attachments/assets/e678c326-c9d4-4739-84f2-664cc8877ddb)
@@ -518,45 +518,45 @@ Settings Page:
 
 ## Testing
 
-**Performing Tests on Various Devices**
+### Performing Tests on Various Devices
 
 Pictogram was tested using Google Chrome Developer Tools Toggle Device Toolbar to simulate various devices. The website was successfully tested on the following devices:
 
-- Iphone 13
-- Samsung Galaxy Tablet A8
-- Windows 10 Computer
+- Iphone 13.
+- Samsung Galaxy Tablet A8.
+- Windows 10 Computer.
 
-Tesing was also done on the following browsers:
-- Google Chrome
-- Microsoft Edge
-- Opera GX
-- Firefox
+Testing was also done on the following browsers:
+- Google Chrome.
+- Microsoft Edge.
+- Opera GX.
+- Firefox.
 
-All Functions, such as navigation, buttons and interactive objects worked perfectly across all tests
+All Functions, such as navigation, buttons and interactive objects worked perfectly across all tests.
 
 
 ## Bugs
 
 |Bug|Fix|
 |---|---|
-|Cloudingary was not receiving images| Updated my files to get rid of the server_url in the src and set up the cloudinary correctly in configs
+|Cloudinary was not receiving images| Updated my files to get rid of the server_url in the src and set up the cloudinary correctly in configs|
 |Profile button in the nav leading to a 404 page| Updated the navigate as it was not getting the username correctly|
-|Profile picture not updated when the bio doesnt get changed|Updated the bio variable so it can be blank with lets the requests get through|
+|Profile picture not updated when the bio doesn't get changed|Updated the bio variable so it can be blank with lets the requests get through|
 
 ## Config
 
-**Forking the Github Repository**
+### Forking the Github Repository
 - Go to the [Pictogram live repository](https://github.com/LewisBull2303/Pictogram)
-- Click on the Fork button in the top right corner
-- You will then have a copy of the repository in your own GitHub Account
+- Click on the Fork button in the top right corner.
+- You will then have a copy of the repository in your own GitHub Account.
 
-**Making a Local Clone**
+### Making a Local Clone
 - Go to the [Pictogram GitHub repository](https://github.com/LewisBull2303/Pictogram).
 - Locate the Code button above the list of files and click it.
 - Highlight the HTTPS button to clone with HTTPS and copy the link.
 - Open the command-line interface on your computer.
 - Change the current working directory to the one where you want the cloned directory.
-- Type git clone and paste the URL from the clipboard
+- Type git clone and paste the URL from the clipboard.
 
 
 
