@@ -248,6 +248,20 @@ User Profile Page:
 - Git - Used for version control, which helps with coding error-free.
 - GitHub - Hosted the Pictogram repository, Allowing me to showcase all my code and the process I took to make this project
 
+**Engines**
+ - Node.js: 16.19.1
+ - NPM: 8.19.3
+
+## React:
+Pictogram is developed with React, a robust JavaScript library designed for building dynamic and interactive user interfaces. Its flexibility and modular architecture make React an ideal choice for creating scalable and maintainable applications like Pictogram.
+
+**Why React?:**
+- Popularity: React is trusted by major platforms like Meta (Facebook), Instagram, and Netflix, showcasing its reliability for large-scale social and media applications.
+- Flexibility: With its modular structure, React enables efficient code management and scalability.
+- React Libraries: React offers a wide range of libraries, such as axios and chakra-ui which allows me to create large and scaleable apps.
+- Component Reusability: React's component-based architecture allows for reusability across the app, reducing redundancy and simplifying maintenance.
+- Speed: React boosts loading times by dynamically updating components, eliminating the need for full-page reloads and ensuring a seamless user experience.
+
 ## Backend API - Pictogram API
 
 Pictogram’s back-end is built using the Django REST Framework (DRF), which efficiently handles all data and operations. It ensures a smooth user experience by managing user authentication, posts, comments, and profiles. The API serves as the core structure, supporting all essential features of the app.
